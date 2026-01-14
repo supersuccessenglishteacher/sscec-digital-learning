@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC Digital Dashboard</title>
+    <style>
+        :root {
+            --primary: #1e3799;
+            --secondary: #006266;
+            --gst-color: #eb4d4b;
+            --coop-color: #27ae60;
+            --bg: #f0f2f5;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; text-align: center; padding: 40px 20px; }
+        .center-name { font-size: 28px; font-weight: bold; margin: 0; }
+        .dashboard { max-width: 1000px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .course-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.08); transition: 0.3s; }
+        .card-header { padding: 20px; color: white; font-size: 20px; font-weight: bold; text-align: center; }
+        .gst-header { background: var(--gst-color); }
+        .coop-header { background: var(--coop-color); }
+        .links-list { list-style: none; padding: 20px; margin: 0; }
+        .course-link {
+            display: flex; align-items: center; justify-content: space-between;
+            text-decoration: none; color: #2d3436; background: #f9f9f9;
+            padding: 12px 20px; border-radius: 10px; margin-bottom: 10px;
+            border: 1px solid #eee; transition: 0.2s; font-weight: 500;
+        }
+        .course-link:hover { background: #f0f0f0; border-color: var(--primary); color: var(--primary); }
+        .footer { text-align: center; padding: 30px; color: #7f8c8d; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top: 10px;">ডিজিটাল লার্নিং ড্যাশবোর্ড</div>
+</header>
+
+<div class="dashboard">
+    <div class="course-card">
+        <div class="card-header gst-header">📦 Corporate GSTR-1</div>
+        <ul class="links-list">
+            <li><a href="sscec_corporate_guide.html" class="course-link"><span>Part 1: Basics</span> 🎧</a></li>
+            <li><a href="sscec_part2_guide.html" class="course-link"><span>Part 2: Invoicing</span> 🎧</a></li>
+            <li><a href="sscec_part3_guide.html" class="course-link"><span>Part 3: ITC</span> 🎧</a></li>
+        </ul>
+    </div>
+
+    <div class="course-card">
+        <div class="card-header coop-header">🏢 Co-operative Society</div>
+        <ul class="links-list">
+            <li><a href="sscec_cooperative_guide.html" class="course-link"><span>Part 1: Accounts</span> 🎧</a></li>
+            <li><a href="sscec_cooperative_part2.html" class="course-link"><span>Part 2: Audit</span> 🎧</a></li>
+            <li><a href="sscec_cooperative_part3.html" class="course-link"><span>Part 3: NPA & Dividend</span> 🎧</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Mobile: 8017247298 | © 2024 SSCEC</p>
+</div>
+
+</body>
+</html>
