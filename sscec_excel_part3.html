@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Advanced Excel Part 3</title>
+    <style>
+        :root { --primary: #217346; --secondary: #e6e6e6; --bg: #f9fbf9; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; }
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid #107c10;
+        }
+        .read-btn {
+            background: var(--primary); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+        }
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16px; line-height: 1.7; border-top: 1px solid #eee; padding-top: 12px; }
+        .footer { text-align: center; padding: 40px 20px; background: #217346; color: white; margin-top: 40px; }
+        .code { background: #e8f5e9; padding: 2px 5px; font-family: monospace; font-weight: bold; color: #1b5e20; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top:5px; opacity:0.9;">Expert Data Mastery - Part 3</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Excel Part-3 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_15.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. XLOOKUP ফাংশন কেন VLOOKUP-এর চেয়ে উন্নত?</span>
+        <div class="answer"><b>উত্তর:</b> XLOOKUP অনেক বেশি নমনীয়। এটি বাম থেকে ডানে এবং ডান থেকে বামে উভয় দিকে তথ্য খুঁজতে পারে এবং এতে কলাম ইনডেক্স নম্বর দেওয়ার প্রয়োজন হয় না।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. PMT ফাংশন কখন ব্যবহার করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> লোনের কিস্তি বা EMI ক্যালকুলেট করার জন্য <span class="code">=PMT()</span> ফাংশন ব্যবহার করা হয়। এটি সুদের হার এবং সময়ের ওপর ভিত্তি করে মাসিক পেমেন্ট বের করে দেয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. সর্টিং (Sorting) এবং ফিল্টারিং (Filtering)-এর তফাৎ কী?</span>
+        <div class="answer"><b>উত্তর:</b> সর্টিং ডেটাকে সাজিয়ে দেয় (যেমন- বেতনের ক্রমানুযায়ী), আর ফিল্টারিং অপ্রয়োজনীয় ডেটা লুকিয়ে শুধু প্রয়োজনীয় তথ্য দেখায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. Remove Duplicates টুলের কাজ কী?</span>
+        <div class="answer"><b>উত্তর:</b> এটি ডেটা টেবিল থেকে একই তথ্যের ডুপ্লিকেট রো-গুলোকে স্থায়ীভাবে সরিয়ে দিয়ে ডেটাকে নিখুঁত করতে সাহায্য করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. এক্সেল ওয়াইল্ডকার্ড (Wildcards) কী?</span>
+        <div class="answer"><b>উত্তর:</b> সার্চ করার সময় <span class="code">*</span> (Asterisk) বা <span class="code">?</span> চিহ্ন ব্যবহার করাকে ওয়াইল্ডকার্ড বলে। এটি অসম্পূর্ণ তথ্য দিয়ে ডেটা খুঁজতে ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. UPPER, LOWER এবং PROPER ফাংশনের মধ্যে পার্থক্য কী?</span>
+        <div class="answer"><b>উত্তর:</b> <span class="code">UPPER</span> সব বড় হাতের করে, <span class="code">LOWER</span> সব ছোট হাতের করে এবং <span class="code">PROPER</span> প্রতিটি শব্দের প্রথম অক্ষর বড় হাতের করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. CONCATENATE বা TEXTJOIN কেন ব্যবহার হয়?</span>
+        <div class="answer"><b>উত্তর:</b> ভিন্ন ভিন্ন সেলের লেখাকে (যেমন- নাম এবং পদবী) একসাথে যুক্ত করে একটি সেলে নিয়ে আসার জন্য এই ফাংশনগুলো ব্যবহার করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. ডেটা ক্লিনিং (Data Cleaning) কেন জরুরি?</span>
+        <div class="answer"><b>উত্তর:</b> সঠিক রিপোর্ট বা গ্রাফ তৈরির আগে ডেটা থেকে বাড়তি স্পেস, ভুল এন্ট্রি এবং ফরম্যাটিং ত্রুটি দূর করা আবশ্যিক, একেই ডেটা ক্লিনিং বলে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. Excel Table (Ctrl+T) ব্যবহারের সুবিধা কী?</span>
+        <div class="answer"><b>উত্তর:</b> এটি ডেটাকে একটি ডায়নামিক ফরম্যাট দেয়, যেখানে নতুন ডেটা যোগ করলে ফর্মুলা এবং ফরম্যাটিং অটোমেটিক কাজ করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. কমেন্ট (Comment) এবং নোট (Note)-এর কাজ কী?</span>
+        <div class="answer"><b>উত্তর:</b> কোনো সেলের ভেতরের তথ্য কেন বা কীভাবে লেখা হয়েছে, তা অন্যদের বা নিজের ভবিষ্যতের জন্য ব্যাখ্যা হিসেবে লিখে রাখার জন্য এটি ব্যবহৃত হয়।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Excel Mastery: Your Key to Career Growth.</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Excel Part-3 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Excel Part-3 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

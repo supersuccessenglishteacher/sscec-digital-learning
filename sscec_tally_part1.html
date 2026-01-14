@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Tally Prime Guide Part 1</title>
+    <style>
+        :root { --primary: #edba12; --secondary: #003057; --bg: #fdfdfd; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--secondary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; }
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--primary);
+        }
+        .read-btn {
+            background: var(--primary); color: #003057; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            transition: 0.3s;
+        }
+        .read-btn:hover { background: #d4a510; transform: scale(1.03); }
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--secondary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--secondary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        .footer { text-align: center; padding: 40px 20px; background: var(--secondary); color: white; margin-top: 40px; }
+        .shortcut { background: #eee; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top:5px; opacity:0.9;">Tally Prime Basic - Part 1</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Tally Prime Part-1 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_10.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. Tally Prime কী এবং এটি কেন ব্যবহৃত হয়?</span>
+        <div class="answer"><b>উত্তর:</b> Tally Prime হলো একটি আধুনিক বিজনেস অ্যাকাউন্টিং সফটওয়্যার যা দিয়ে অতি সহজে ভাউচার এন্ট্রি, ইনভেন্টরি ম্যানেজমেন্ট এবং ট্যাক্স রিপোর্ট তৈরি করা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. Tally Prime-এর বিশেষ সুবিধা কী?</span>
+        <div class="answer"><b>উত্তর:</b> এর সবথেকে বড় সুবিধা হলো <span class="shortcut">Go To</span> সার্চ বার এবং উন্নত ইউজার ইন্টারফেস, যা কাজকে অনেক দ্রুত করে তোলে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. কোম্পানি ক্রিয়েশনের সময় Financial Year কেন গুরুত্বপূর্ণ?</span>
+        <div class="answer"><b>উত্তর:</b> কারণ ভারতে সরকারি নিয়মে ১লা এপ্রিল থেকে আর্থিক বছর শুরু হয়। ভুল সাল দিলে অ্যাকাউন্টিং রিপোর্টে গরমিল হতে পারে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. Chart of Accounts কী?</span>
+        <div class="answer"><b>উত্তর:</b> এটি হলো মাস্টার ডেটা লিস্ট, যেখানে কোম্পানির সমস্ত লেজার এবং গ্রুপগুলোর সম্পূর্ণ তালিকা একসাথে দেখা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. লেজার (Ledger) তৈরির শর্টকাট কী?</span>
+        <div class="answer"><b>উত্তর:</b> কোনো ভাউচার এন্ট্রি করার সময় সরাসরি লেজার তৈরি করতে চাইলে <span class="shortcut">Alt + C</span> প্রেস করতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. Contra Voucher (F4) কখন ব্যবহার করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> ক্যাশ ব্যাংকে জমা দেওয়া (Cash Deposit), ব্যাংক থেকে টাকা তোলা (Cash Withdrawal) বা ব্যাংক টু ব্যাংক ট্রান্সফার এন্ট্রির জন্য এটি ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. Payment (F5) এবং Receipt (F6) এর মধ্যে তফাৎ কী?</span>
+        <div class="answer"><b>উত্তর:</b> ব্যবসা থেকে কোনো পেমেন্ট করলে (যেমন- বেতন বা ভাড়া) F5 এবং ব্যবসায় টাকা আসলে (যেমন- ক্যাশ সেলস বা লোন) F6 ভাউচার ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. Journal Voucher (F7) কখন দরকার হয়?</span>
+        <div class="answer"><b>উত্তর:</b> নগদহীন বা Non-cash লেনদেন যেমন- ধারে সম্পত্তি কেনা বা ডেপ্রিসিয়েশন চার্জ করার জন্য জার্নাল ভাউচার ব্যবহার করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. ট্যালিতে Sales এবং Purchase ভাউচার মোড কী কী?</span>
+        <div class="answer"><b>উত্তর:</b> সাধারণত Item Invoice, Accounting Invoice এবং As Voucher—এই তিনভাবে সেলস ও পারচেজ এন্ট্রি করা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. ভুল এন্ট্রি সংশোধন বা ডিলিট করবেন কীভাবে?</span>
+        <div class="answer"><b>উত্তর:</b> ভুল এন্ট্রি ঠিক করতে <span class="shortcut">Enter</span> এবং স্থায়ীভাবে ডিলিট করতে <span class="shortcut">Alt + D</span> ব্যবহার করতে হয়।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Become a Tally Expert with SSCEC!</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Tally Prime Part-1 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Tally Prime Part-1 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

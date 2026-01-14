@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Advanced Excel Part 1</title>
+    <style>
+        :root { --primary: #217346; --secondary: #e6e6e6; --bg: #f9fbf9; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; }
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid #107c10;
+        }
+        .read-btn {
+            background: var(--primary); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            transition: 0.3s;
+        }
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16px; line-height: 1.7; border-top: 1px solid #eee; padding-top: 12px; }
+        .footer { text-align: center; padding: 40px 20px; background: #217346; color: white; margin-top: 40px; }
+        .key { background: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #d35400; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top:5px; opacity:0.9;">Advanced Excel Training - Part 1</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Excel Part-1 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_13.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. Advanced Excel-এর গুরুত্ব কী?</span>
+        <div class="answer"><b>উত্তর:</b> বড় মাপের ডেটা এনালাইসিস, রিপোর্ট তৈরি এবং অটোমেশনের জন্য অ্যাডভান্সড এক্সেল ব্যবহৃত হয়। এটি অফিসের কাজকে অনেক গুণ দ্রুত করে তোলে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. Absolute Cell Reference কীভাবে করতে হয়?</span>
+        <div class="answer"><b>উত্তর:</b> ফর্মুলায় কোনো সেলকে ফিক্সড বা লক করার জন্য সেলের কলাম ও রো-এর আগে <span class="key">$</span> চিহ্ন ব্যবহার করা হয়। কি-বোর্ড থেকে <span class="key">F4</span> টিপলে এটি অটোমেটিক হয়ে যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. VLOOKUP ফর্মুলার মূল কাজ কী?</span>
+        <div class="answer"><b>উত্তর:</b> ভি-লুক-আপ একটি 'Vertical Lookup' ফাংশন। এটি মাস্টার ডেটা টেবিল থেকে নির্দিষ্ট ভ্যালুর ওপর ভিত্তি করে প্রয়োজনীয় তথ্য খুঁজে বের করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. IF Function কেন ব্যবহার করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> এটি একটি লজিক্যাল ফাংশন। কোনো নির্দিষ্ট শর্ত সত্য হলে এক ধরণের ফলাফল এবং মিথ্যা হলে অন্য ধরণের ফলাফল দেখানোর জন্য এটি ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. Conditional Formatting কী?</span>
+        <div class="answer"><b>উত্তর:</b> এই ফিচারের মাধ্যমে নির্দিষ্ট শর্তে সেলের ডিজাইন (রঙ, ফন্ট ইত্যাদি) অটোমেটিক পরিবর্তন করা যায়। যেমন— ডুপ্লিকেট নম্বর হাইলাইট করা।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. Data Validation-এর সুবিধা কী?</span>
+        <div class="answer"><b>উত্তর:</b> এটি ডেটা এন্ট্রির সময় ভুল হওয়ার সম্ভাবনা কমায়। এর মাধ্যমে ড্রপডাউন লিস্ট তৈরি করা বা সেলে ইনপুটের সীমা নির্ধারণ করা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. SUMIF এবং COUNTIF-এর মধ্যে পার্থক্য কী?</span>
+        <div class="answer"><b>উত্তর:</b> <span class="key">SUMIF</span> ব্যবহার করা হয় শর্ত অনুযায়ী যোগফল বের করতে, আর <span class="key">COUNTIF</span> ব্যবহার করা হয় শর্ত অনুযায়ী সেলের সংখ্যা গুনতে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. এক্সেলের রো (Row) এবং কলাম (Column) হাইড করার শর্টকাট কী?</span>
+        <div class="answer"><b>উত্তর:</b> রো হাইড করতে <span class="key">Ctrl + 9</span> এবং কলাম হাইড করতে <span class="key">Ctrl + 0</span> ব্যবহার করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. Flash Fill (Ctrl+E) কখন কাজে লাগে?</span>
+        <div class="answer"><b>উত্তর:</b> যখন আপনি টেক্সট আলাদা করতে চান (যেমন— ফার্স্ট নেম ও লাস্ট নেম আলাদা করা), তখন এটি প্যাটার্ন বুঝে অটোমেটিক কাজ সম্পন্ন করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. Freeze Panes কেন ব্যবহার করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> বড় সিটে ডেটা স্ক্রল করার সময় যাতে টাইটেল বা হেডার রো নজরের সামনে স্থির থাকে, তার জন্য ফ্রিজ পেন ব্যবহার করা হয়।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Master Excel, Master Productivity.</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Excel Part-1 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Excel Part-1 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

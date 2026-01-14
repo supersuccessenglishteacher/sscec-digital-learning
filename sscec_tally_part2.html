@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Tally Prime Part 2</title>
+    <style>
+        :root { --primary: #edba12; --secondary: #003057; --bg: #fdfdfd; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--secondary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; }
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--primary);
+        }
+        .read-btn {
+            background: var(--primary); color: #003057; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+        }
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--secondary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--secondary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #34495e; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        .footer { text-align: center; padding: 40px 20px; background: var(--secondary); color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top:5px; opacity:0.9;">Inventory Management - Part 2</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Tally Part-2 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_11.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. ট্যালিতে Inventory বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> ইনভেন্টরি হলো স্টকের হিসাব রাখা। এর মাধ্যমে ব্যবসার মালপত্র কেনা (Purchase), বিক্রি (Sales) এবং ক্লোজিং স্টকের পরিমাণ নিখুঁতভাবে পরিচালনা করা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. Stock Group এবং Stock Category-র কাজ কী?</span>
+        <div class="answer"><b>উত্তর:</b> স্টক গ্রুপ পণ্যকে ব্রড ক্যাটাগরিতে ভাগ করে (যেমন- ল্যাপটপ), আর ক্যাটাগরি ব্যবহার করে আরও নির্দিষ্ট করা যায় (যেমন- গেমিং বা অফিস ল্যাপটপ)।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. Unit of Measure (UoM) কেন তৈরি করতে হয়?</span>
+        <div class="answer"><b>উত্তর:</b> পণ্য কীভাবে মাপা হবে তা নির্ধারণ করতে ইউনিট প্রয়োজন। যেমন- Kg, Pcs, Mtr বা Box. ইউনিট ছাড়া ট্যালিতে স্টক আইটেম তৈরি করা যায় না।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. Godown বা Location ফিচারটি কেন ব্যবহার হয়?</span>
+        <div class="answer"><b>উত্তর:</b> যখন কোনো ব্যবসার মালপত্র একাধিক স্থানে বা গোডাউনে থাকে, তখন কোন গোডাউনে কতটা মাল আছে তা জানার জন্য এটি ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. Stock Summary রিপোর্ট থেকে কী জানা যায়?</span>
+        <div class="answer"><b>উত্তর:</b> এই রিপোর্ট থেকে স্টকের ইনওয়ার্ড, আউটওয়ার্ড এবং বর্তমানে হাতে থাকা মালের মোট ভ্যালু একনজরে দেখা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. Reorder Level বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> এটি একটি নির্দিষ্ট সীমা। স্টকের পরিমাণ ওই সীমার নিচে নামলে ট্যালি স্বয়ংক্রিয়ভাবে আপনাকে মাল অর্ডার করার কথা মনে করিয়ে দেয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. Credit Note এবং Debit Note কেন ব্যবহার হয়?</span>
+        <div class="answer"><b>উত্তর:</b> বিক্রয় করা মাল ফেরত আসলে (Sales Return) ক্রেডিট নোট এবং কেনা মাল ফেরত দিলে (Purchase Return) ডেবিট নোট ভাউচার এন্ট্রি করতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. ট্যালিতে Batch-wise Details বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> বিশেষ করে ওষুধ বা খাদ্যদ্রব্যের ক্ষেত্রে ম্যানুফ্যাকচারিং এবং এক্সপায়ারি ডেট ট্র্যাক করার জন্য ব্যাচ-ওয়াইজ ডিটেইলস ফিচারটি ব্যবহার করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. Stock Journal ভাউচার কখন ব্যবহার করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> এক গোডাউন থেকে অন্য গোডাউনে মাল ট্রান্সফার করার জন্য অথবা ম্যানুফ্যাকচারিং প্রসেস দেখানোর জন্য এই ভাউচার ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. ইনভেন্টরি এন্ট্রির সময় GST কীভাবে সেট করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> স্টক আইটেম বা গ্রুপের ভেতরে HSN কোড এবং সঠিক GST ট্যাক্স রেট (যেমন- ৫%, ১২%, বা ১৮%) সেট করে দিতে হয়।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>সঠিক ইনভেন্টরি ম্যানেজমেন্টই ব্যবসার প্রাণ।</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Tally Part-2 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Tally Part-2 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

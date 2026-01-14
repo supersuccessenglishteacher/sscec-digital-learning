@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Tally Prime Part 3 (GST)</title>
+    <style>
+        :root { --primary: #edba12; --secondary: #003057; --bg: #fdfdfd; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--secondary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; }
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--primary);
+        }
+        .read-btn {
+            background: var(--primary); color: #003057; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+        }
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--secondary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--secondary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #34495e; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        .footer { text-align: center; padding: 40px 20px; background: var(--secondary); color: white; margin-top: 40px; }
+        .highlight { color: #d35400; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top:5px; opacity:0.9;">Tally with GST - Part 3</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Tally Part-3 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_12.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. ট্যালিতে GST সক্রিয় করার শর্টকাট কী?</span>
+        <div class="answer"><b>উত্তর:</b> কি-বোর্ড থেকে <span class="highlight">F11</span> প্রেস করে 'Statutory Details'-এ গিয়ে 'Enable Goods and Services Tax (GST)' অপশনটি 'Yes' করতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. ট্যালিতে GST লেজার কয় প্রকার ও কী কী?</span>
+        <div class="answer"><b>উত্তর:</b> মূলত তিন প্রকার: <span class="highlight">CGST</span> ও <span class="highlight">SGST</span> (রাজ্যের ভেতরের কেনাবেচার জন্য) এবং <span class="highlight">IGST</span> (অন্য রাজ্যের সাথে লেনদেনের জন্য)।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. ইনভয়েস তৈরির সময় HSN কোড কোথায় সেট করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> HSN কোড এবং ট্যাক্স রেট সাধারণত 'Stock Item' তৈরির সময় অথবা 'Stock Group'-এর ভেতর কনফিগার করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. কম্পোজিশন এবং রেগুলার ডিলারের সেটিংস কোথায় থাকে?</span>
+        <div class="answer"><b>উত্তর:</b> F11-এর অধীনে GST Registration Details স্ক্রিনে 'Registration Type' থেকে সঠিক ডিলার টাইপ সিলেক্ট করতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. ট্যাক্স ইনভয়েস এবং বিল অফ সাপ্লাই-এর তফাৎ কী?</span>
+        <div class="answer"><b>উত্তর:</b> রেগুলার ডিলার ট্যাক্সেবল মাল বিক্রি করলে 'Tax Invoice' দেয়। আর যখন ট্যাক্স লাগে না বা ডিলার কম্পোজিশন স্কিমে থাকে, তখন 'Bill of Supply' তৈরি হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. GSTR-1 রিপোর্টটি ট্যালিতে কীভাবে দেখা যায়?</span>
+        <div class="answer"><b>উত্তর:</b> <span class="highlight">Go To</span> সার্চ বারে 'GSTR-1' লিখলে অথবা Display > GST Reports > GSTR-1 পাথে গিয়ে সেলস রিপোর্ট দেখা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. E-Way Bill জেনারেট করার নিয়ম কী?</span>
+        <div class="answer"><b>উত্তর:</b> ইনভয়েস ভ্যালু ৫০,০০০ টাকার বেশি হলে ট্যালি স্বয়ংক্রিয়ভাবে ই-ওয়ে বিল ডিটেইলস ফিল-আপ করার অপশন দেয়, যা সরাসরি পোর্টাল আপলোডে সাহায্য করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. RCM (Reverse Charge Mechanism) এন্ট্রি কখন হয়?</span>
+        <div class="answer"><b>উত্তর:</b> যখন কোনো নথিভুক্ত নয় (Unregistered) এমন ডিলারের থেকে সার্ভিস নেওয়া হয় এবং ট্যাক্স জমা দেওয়ার দায় ক্রেতার থাকে, তখন ট্যালিতে RCM এন্ট্রি করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. ট্যালি থেকে সরাসরি রিটার্ন ফাইল করা যায়?</span>
+        <div class="answer"><b>উত্তর:</b> সরাসরি ফাইল করা যায় না, তবে ট্যালি থেকে <span class="highlight">JSON</span> ফাইল এক্সপোর্ট করে জি-এস-টি পোর্টালে আপলোড করা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. 'Uncertain Transactions' বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> জি-এস-টি রিপোর্টে কোনো তথ্য ভুল থাকলে (যেমন ভুল GSTIN বা HSN) সেগুলো এই সেকশনে দেখায়, যা রিটার্ন ফাইল করার আগে ঠিক করতে হয়।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>GST Compliant Accounting starts here!</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Tally Part-3 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Tally Part-3 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

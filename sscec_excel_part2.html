@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Advanced Excel Part 2</title>
+    <style>
+        :root { --primary: #217346; --secondary: #e6e6e6; --bg: #f9fbf9; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; }
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid #107c10;
+        }
+        .read-btn {
+            background: var(--primary); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+        }
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16px; line-height: 1.7; border-top: 1px solid #eee; padding-top: 12px; }
+        .footer { text-align: center; padding: 40px 20px; background: #217346; color: white; margin-top: 40px; }
+        .highlight { color: #d35400; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top:5px; opacity:0.9;">Pivot Tables & Data Analysis - Part 2</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Excel Part-2 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_14.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. পিভট টেবিল (Pivot Table) কেন ব্যবহার করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> পিভট টেবিল হলো এক্সেলে ডেটা বিশ্লেষণের সবথেকে শক্তিশালী টুল। এর মাধ্যমে বিশাল পরিমাণ ডেটাকে দ্রুত সামারি করা এবং রিপোর্ট তৈরি করা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. পিভট টেবিলের চারটি প্রধান অংশ কী কী?</span>
+        <div class="answer"><b>উত্তর:</b> ১. Filters, ২. Columns, ৩. Rows, এবং ৪. Values. এই চারটি ফিল্ডে ডেটা ড্র্যাগ করে রিপোর্ট তৈরি করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. এক্সেল ড্যাশবোর্ড (Dashboard) বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> ড্যাশবোর্ড হলো বিভিন্ন গুরুত্বপূর্ণ রিপোর্ট এবং ভিজ্যুয়াল চার্টের একটি সমষ্টি, যা থেকে ব্যবসার সামগ্রিক অবস্থা একনজরে বোঝা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. স্লাইসার (Slicer) কী?</span>
+        <div class="answer"><b>উত্তর:</b> স্লাইসার হলো একটি আধুনিক ফিল্টার বাটন। পিভট টেবিল বা চার্টকে মাউসের এক ক্লিকেই ফিল্টার করার জন্য এটি ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. গোল সিক (Goal Seek) কেন ব্যবহার হয়?</span>
+        <div class="answer"><b>উত্তর:</b> এটি একটি 'What-if Analysis' টুল। যখন আমাদের লক্ষ্য (Result) নির্দিষ্ট থাকে কিন্তু ইনপুট ভ্যালু কত লাগবে তা জানা থাকে না, তখন এটি ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. ড্রপডাউন লিস্ট (Dropdown List) তৈরির সুবিধা কী?</span>
+        <div class="answer"><b>উত্তর:</b> এটি ডেটা এন্ট্রির সময় বানান ভুল বা ভুল তথ্য ইনপুট হওয়া আটকায়। Data Validation অপশন থেকে এটি তৈরি করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. ম্যাক্রো (Macro) বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> ম্যাক্রো হলো এক্সেলের কাজ অটোমেট করার একটি পদ্ধতি। এটি আপনার করা স্টেপগুলো রেকর্ড করে রাখে এবং পরবর্তীতে এক ক্লিকেই সেই কাজ সম্পন্ন করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. পিভট চার্ট (Pivot Chart) কেন বিশেষ?</span>
+        <div class="answer"><b>উত্তর:</b> সাধারণ চার্ট স্ট্যাটিক হয়, কিন্তু পিভট চার্ট ডায়নামিক। পিভট টেবিলের ডেটা বা ফিল্টার পরিবর্তন করলে চার্টটিও নিজে থেকে বদলে যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. টেক্সট টু কলাম (Text to Columns) এর কাজ কী?</span>
+        <div class="answer"><b>উত্তর:</b> এর মাধ্যমে একটি সেলের লম্বা টেক্সটকে কমা বা স্পেসের ওপর ভিত্তি করে আলাদা আলাদা কলামে ভাগ করা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. প্রটেক্ট শিট (Protect Sheet) কীভাবে কাজে লাগে?</span>
+        <div class="answer"><b>উত্তর:</b> কোনো গুরুত্বপূর্ণ শিটে পাসওয়ার্ড দিয়ে রাখলে অন্য কেউ তথ্য পরিবর্তন করতে পারে না। এটি ডেটা সিকিউরিটির জন্য অত্যন্ত জরুরি।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Excel-এ দক্ষ হন, ক্যারিয়ারে এগিয়ে থাকুন।</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Excel Part-2 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Excel Part-2 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>
