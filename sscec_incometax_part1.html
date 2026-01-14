@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Income Tax Guide Part 1</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; margin: 0; }
+        .address { font-size: 14px; opacity: 0.9; margin-top: 5px; }
+        .contact { font-size: 16px; margin-top: 10px; font-weight: bold; color: #f1c40f; }
+
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .read-btn {
+            background: var(--accent); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            display: flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .read-btn:hover { background: #219150; transform: scale(1.03); }
+
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #34495e; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        
+        .footer { text-align: center; padding: 40px 20px; background: #2c3e50; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div class="address">22/1 Bipin Paul Road, Nimta, Kolkata - 700049</div>
+    <div class="contact">📞 Mobile: 8017247298</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Income Tax Part-1 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_7.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. Income Tax বা আয়কর কী?</span>
+        <div class="answer"><b>উত্তর:</b> আয়কর হলো একটি প্রত্যক্ষ কর (Direct Tax), যা কোনো ব্যক্তি বা প্রতিষ্ঠানের বাৎসরিক আয়ের ওপর ভারত সরকার সরাসরি ধার্য করে। এটি দেশের উন্নয়নে ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. Financial Year (FY) এবং Assessment Year (AY) বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> যে বছরে আপনি আয় করছেন সেটি FY (যেমন: ২০২৪-২৫)। আর যে বছরে ওই আয়ের ওপর ট্যাক্স হিসেব করে রিটার্ন জমা দিচ্ছেন সেটি AY (যেমন: ২০২৫-২৬)।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. আয়ের পাঁচটি প্রধান উৎস বা Heads of Income কী কী?</span>
+        <div class="answer"><b>উত্তর:</b> ১. Salary, ২. House Property, ৩. Profits from Business/Profession, ৪. Capital Gains এবং ৫. Income from Other Sources.</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. PAN কার্ডের প্রয়োজনীয়তা কী?</span>
+        <div class="answer"><b>উত্তর:</b> PAN হলো ১০ অক্ষরের স্থায়ী নম্বর যা করদাতাদের শনাক্ত করতে এবং বড় অংকের আর্থিক লেনদেন ট্র্যাক করতে ইনকাম ট্যাক্স বিভাগ ব্যবহার করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. TDS (Tax Deducted at Source) কী?</span>
+        <div class="answer"><b>উত্তর:</b> আয়ের উৎসস্থলেই যে কর কেটে নেওয়া হয় তাকে TDS বলে। যেমন ব্যাংক সুদের ওপর বা কোম্পানি স্যালারি দেওয়ার সময় TDS কেটে সরকারি ফান্ডে জমা দেয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. Standard Deduction কী?</span>
+        <div class="answer"><b>উত্তর:</b> বেতনভোগী কর্মচারীদের মোট বেতন থেকে কোনো প্রমাণ ছাড়াই করমুক্ত হিসেবে যে ৫০,০০০ টাকার ছাড় দেওয়া হয়, তাকেই স্ট্যান্ডার্ড ডিডাকশন বলে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. Old বনাম New Tax Regime-এর প্রধান তফাৎ কী?</span>
+        <div class="answer"><b>উত্তর:</b> ওল্ড রেজিমে 80C, HRA ইত্যাদি ছাড় পাওয়া যায় কিন্তু রেট বেশি। নিউ রেজিমে ছাড় কম থাকলেও ট্যাক্স স্ল্যাব রেট অনেক কম থাকে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. Section 80C বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> এটি একটি জনপ্রিয় ধারা যেখানে LIC, PPF, বাচ্চাদের টিউশন ফি ইত্যাদিতে বিনিয়োগ করে বছরে ১.৫ লক্ষ টাকা পর্যন্ত আয়ের ওপর কর ছাড় পাওয়া যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. কেন Income Tax Return (ITR) ফাইল করা জরুরি?</span>
+        <div class="answer"><b>উত্তর:</b> লোন পাওয়ার সুবিধা, বিদেশের ভিসা প্রসেসিং এবং কেটে নেওয়া TDS ফেরত পাওয়ার জন্য প্রতি বছর নির্দিষ্ট সময়ে ITR ফাইল করা দরকার।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. Income Tax Slab Rate কী?</span>
+        <div class="answer"><b>উত্তর:</b> আয় অনুযায়ী ট্যাক্সের হার নির্ধারিত থাকে। যেমন একটি নির্দিষ্ট সীমা (বর্তমানে ৭ লক্ষ টাকা পর্যন্ত নিউ রেজিমে) পর্যন্ত আয়ের ওপর কোনো কর দিতে হয় না।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>সঠিক কর শিক্ষা — উন্নত ভবিষ্যৎ</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Income Tax Part-1 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Income Tax Part-1 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Income Tax Part 2</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; margin: 0; }
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .read-btn {
+            background: var(--accent); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            display: flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #34495e; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        .footer { text-align: center; padding: 40px 20px; background: #2c3e50; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top:5px; opacity:0.9;">Income Tax Expert Module - Part 2</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Income Tax Part-2 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_8.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. ITR-1 বা 'সহজ' ফর্ম কারা ব্যবহার করেন?</span>
+        <div class="answer"><b>উত্তর:</b> যাদের বার্ষিক আয় স্যালারি, একটি বাড়ি এবং অন্যান্য সাধারণ উৎস থেকে হয় এবং মোট আয় ৫০ লক্ষ টাকার নিচে, তারা ITR-1 ব্যবহার করেন।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. ITR-4 বা 'সুগম' ফর্মটি কাদের জন্য?</span>
+        <div class="answer"><b>উত্তর:</b> এটি ছোট ব্যবসায়ী বা পেশাদারদের জন্য যারা 'Presumptive Income Scheme' (যেমন 44AD বা 44ADA) অনুযায়ী ট্যাক্স রিটার্ন ফাইল করেন।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. Advance Tax বা অগ্রিম কর কাকে দিতে হয়?</span>
+        <div class="answer"><b>উত্তর:</b> যদি কোনো করদাতার বছরে নিট ট্যাক্স লায়াবিলিটি ১০,০০০ টাকার বেশি হয়, তবে তাকে কিস্তিতে অগ্রিম কর জমা দিতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. Capital Gain বা মূলধনী লাভ কী?</span>
+        <div class="answer"><b>উত্তর:</b> জমি, বাড়ি, শেয়ার বা গোল্ডের মতো সম্পত্তি বিক্রি করে যে লাভ হয় তাকে ক্যাপিটাল গেইন বলে। এটি বিক্রির সময়ের ওপর ভিত্তি করে STCG বা LTCG হতে পারে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. Section 80D কিসের জন্য ব্যবহৃত হয়?</span>
+        <div class="answer"><b>উত্তর:</b> নিজের বা পরিবারের সদস্যদের জন্য হেলথ ইন্স্যুরেন্স বা মেডিকেল চেকআপের খরচ বাবদ ২৫,০০০ থেকে ৫০,০০০ টাকা পর্যন্ত ছাড় পাওয়া যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. Form 16 এর গুরুত্ব কী?</span>
+        <div class="answer"><b>উত্তর:</b> এটি একটি TDS সার্টিফিকেট যা কর্মচারী তার কোম্পানির কাছ থেকে পায়। ITR ফাইল করার সময় আয়ের প্রমাণ হিসেবে এটি অত্যন্ত জরুরি।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. Form 26AS এবং AIS কেন চেক করা উচিত?</span>
+        <div class="answer"><b>উত্তর:</b> আপনার PAN এর বিপরীতে কত টাকা TDS জমা পড়েছে এবং কী কী বড় আর্থিক লেনদেন হয়েছে তা মিলিয়ে দেখার জন্য এই দুটি স্টেটমেন্ট দেখা জরুরি।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. Surcharge এবং Cess বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> খুব উচ্চ আয়ের ওপর অতিরিক্ত ট্যাক্স হলো সারচার্জ। আর ৪% হেলথ ও এডুকেশন সেস প্রতিটি করদাতার ট্যাক্সের ওপর ধার্য করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. Income Tax Refund পাওয়ার প্রক্রিয়া কী?</span>
+        <div class="answer"><b>উত্তর:</b> যদি আপনার সঠিক ট্যাক্সের চেয়ে বেশি TDS কেটে নেওয়া হয়, তবে ITR ফাইল করার পর ব্যাংক অ্যাকাউন্টে ওই অতিরিক্ত টাকা ফেরত আসে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. Belated Return কাকে বলে?</span>
+        <div class="answer"><b>উত্তর:</b> ইনকাম ট্যাক্স অ্যাক্টের নির্ধারিত তারিখের (সাধারণত ৩১শে জুলাই) পর যে রিটার্ন জমা দেওয়া হয় তাকে বিলেটেড রিটার্ন বলে, যার জন্য লেট ফি দিতে হয়।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>সঠিক কর সচেতনতা আপনার সম্পদ বাঁচায়।</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Income Tax Part-2 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Income Tax Part-2 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

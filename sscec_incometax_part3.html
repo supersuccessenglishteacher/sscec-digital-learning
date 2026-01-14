@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Income Tax Part 3</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; margin: 0; }
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .read-btn {
+            background: var(--accent); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            display: flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #34495e; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        .footer { text-align: center; padding: 40px 20px; background: #2c3e50; color: white; margin-top: 40px; }
+        .highlight { color: #e67e22; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div style="margin-top:5px; opacity:0.9;">TDS & Compliance Module - Part 3</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Income Tax Part-3 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_9.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. TDS বা ট্যাক্স ডিডাকটেড অ্যাট সোর্স কেন কাটা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> সরকারের নিয়মিত রাজস্ব নিশ্চিত করতে এবং বড় লেনদেনের ওপর নজরদারি বজায় রাখতে আয়ের উৎসস্থলেই কর কেটে নেওয়ার নিয়ম করা হয়েছে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. Section 192 কিসের সাথে যুক্ত?</span>
+        <div class="answer"><b>উত্তর:</b> এটি <span class="highlight">Salary</span>-র ওপর TDS কাটার ধারা। কর্মচারী যে ট্যাক্স স্ল্যাবে পড়েন, সেই অনুযায়ী কোম্পানি প্রতি মাসে বেতন থেকে ট্যাক্স কেটে নেয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. Section 194J অনুযায়ী TDS রেট কত?</span>
+        <div class="answer"><b>উত্তর:</b> প্রফেশনাল ফি (যেমন অডিটর বা ল ইয়ারের ফি) এবং টেকনিক্যাল সার্ভিসের জন্য সাধারণত <span class="highlight">১০%</span> হারে TDS কাটা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. কন্ট্রাক্টর বা ঠিকাদারদের জন্য কোন TDS ধারা প্রযোজ্য?</span>
+        <div class="answer"><b>উত্তর:</b> <span class="highlight">Section 194C</span> অনুযায়ী ব্যক্তিগত কন্ট্রাক্টরের জন্য ১% এবং কোম্পানি কন্ট্রাক্টরের জন্য ২% হারে TDS কাটা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. ব্যাংক সুদের ওপর TDS কাটার সীমা কত?</span>
+        <div class="answer"><b>উত্তর:</b> বছরে ব্যাংক সুদের পরিমাণ ৪০,০০০ টাকার বেশি (সিনিয়র সিটিজেনদের জন্য ৫০,০০০ টাকা) হলে ব্যাংক ১০% হারে TDS কাটে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. TAN (Tax Deduction and Collection Account Number) কী?</span>
+        <div class="answer"><b>উত্তর:</b> এটি একটি ১০ অক্ষরের কোড যা টি-ডি-এস কর্তনকারী প্রতিটি ব্যক্তি বা প্রতিষ্ঠানের জন্য থাকা বাধ্যতামূলক।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. TDS জমা দেওয়ার নির্দিষ্ট সময়সীমা কী?</span>
+        <div class="answer"><b>উত্তর:</b> প্রতি মাসে কাটা টি-ডি-এস পরবর্তী মাসের <span class="highlight">৭ তারিখের</span> মধ্যে সরকারি কোষাগারে জমা দিতে হয় (মার্চ মাসের জন্য ৩০শে এপ্রিল)।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. TDS রিটার্ন ফাইল কখন করতে হয়?</span>
+        <div class="answer"><b>উত্তর:</b> এটি প্রতি তিন মাস অন্তর (Quarterly) ফাইল করতে হয়। যেমন এপ্রিল-জুন কোয়ার্টারের রিটার্ন ৩১শে জুলাইয়ের মধ্যে জমা দিতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. Form 15G এবং 15H-এর কাজ কী?</span>
+        <div class="answer"><b>উত্তর:</b> যদি কোনো করদাতার মোট আয় করযোগ্য সীমার নিচে থাকে, তবে এই ডিক্লারেশন ফর্মগুলো জমা দিয়ে তিনি টি-ডি-এস থেকে রেহাই পেতে পারেন।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. TDS কমপ্লায়েন্সে দেরি করলে পেনাল্টি কী?</span>
+        <div class="answer"><b>উত্তর:</b> টাকা জমা দিতে দেরি করলে মাসিক ১.৫% সুদ এবং কোয়ার্টারলি রিটার্ন দিতে দেরি করলে প্রতিদিন ২০০ টাকা (ধারা 234E) লেট ফি লাগে।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Expert Guidance for Expert Careers.</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Income Tax Part-3 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Income Tax Part-3 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>
