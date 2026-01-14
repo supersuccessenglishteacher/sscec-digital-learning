@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Corporate GST Guide</title>
+    <style>
+        :root { --primary: #1e3799; --accent: #e67e22; --bg: #f8fafc; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        
+        /* Header */
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; margin: 0; }
+        .address { font-size: 14px; opacity: 0.9; margin-top: 5px; }
+        .contact { font-size: 16px; margin-top: 10px; font-weight: bold; color: #ffca28; }
+
+        /* Sticky Audio Controls */
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .read-btn {
+            background: var(--accent); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            display: flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .read-btn:hover { background: #d35400; transform: scale(1.03); }
+
+        /* Content Area */
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16.5px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        
+        .footer { text-align: center; padding: 40px 20px; background: #1e293b; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div class="address">22/1 Bipin Paul Road, Nimta, Kolkata - 700049</div>
+    <div class="contact">📞 Mobile: 8017247298</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">অধ্যায়টি শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_1.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. Corporate world-এ GSTR-1 এত গুরুত্বপূর্ণ কেন?</span>
+        <div class="answer"><b>উত্তর:</b> কারণ GSTR-1 হলো প্রতিষ্ঠানের Sales Declaration। এই রিটার্ন থেকেই ক্লায়েন্টের Turnover নির্ধারিত হয় এবং কাস্টমারের ITC Eligibility তৈরি হয়। এখানে ভুল হওয়া মানে সরাসরি ক্লায়েন্ট রিলেশনশিপ এবং Compliance-এ আঘাত লাগা।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. Monthly বনাম QRMP — করপোরেট ক্ষেত্রে কোনটি Prefer করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> বড় করপোরেট হাউসের জন্য Monthly GSTR-1 শ্রেয় কারণ এতে Real-time compliance বজায় থাকে। SME বা MSME-র ক্ষেত্রে QRMP প্রেফার করা হয় মূলত Cash Flow ম্যানেজমেন্টের সুবিধার জন্য।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. IFF দিলে কি GSTR-1 দেওয়া শেষ?</span>
+        <div class="answer"><b>উত্তর:</b> না। IFF শুধু B2B ইনভয়েস আপলোড করার সুবিধা। ফাইনাল লিগ্যাল রিটার্ন হলো কোয়ার্টারলি GSTR-1। এটি একটি কমন ট্র্যাপ কোশ্চেন যা ইন্টারভিউতে জিজ্ঞাসা করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. GSTR-1 late হলে করপোরেট ইমেজে কী ইমপ্যাক্ট পড়ে?</span>
+        <div class="answer"><b>উত্তর:</b> কাস্টমার ITC পায় না এবং ভেন্ডর কমপ্লায়েন্স রেটিং খারাপ হয়। এটি একটি বড় রেপুটেশন লস।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. GSTR-1 ও GSTR-3B mismatch হলে কী হবে?</span>
+        <div class="answer"><b>উত্তর:</b> ডিপার্টমেন্ট থেকে DRC-01C নোটিশ পাঠাতে পারে। এতে অ্যাডিশনাল ট্যাক্স এবং ইন্টারেস্টের ঝুঁকি থাকে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. HSN Summary কেন এত ক্রিটিক্যাল?</span>
+        <div class="answer"><b>উত্তর:</b> এটি ডেটা অ্যানালিটিক্সের জন্য ব্যবহৃত হয়। ভুল HSN মানেই ভবিষ্যতের অডিট বা স্ক্রুটিনির মুখে পড়া।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. করপোরেটে Nil GSTR-1 কখন দেওয়া হয়?</span>
+        <div class="answer"><b>উত্তর:</b> শুধুমাত্র যখন কোনো সেলস বা ইনভয়েস থাকে না।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. Amendment Table কখন ব্যবহার করবেন?</span>
+        <div class="answer"><b>উত্তর:</b> ভুল GSTIN, Taxable Value বা Tax Rate ঠিক করার জন্য।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. করপোরেট অডিটে GSTR-1 কীভাবে ভেরিফাই হয়?</span>
+        <div class="answer"><b>উত্তর:</b> অডিটররা মূলত Invoice Series Continuity এবং HSN Consistency চেক করেন।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. ইন্টারভিউতে বেস্ট প্র্যাকটিস কী বলবেন?</span>
+        <div class="answer"><b>উত্তর:</b> আমরা নিশ্চিত করি GSTR-1 সময়মতো ফাইল হয়েছে এবং তা বুকস-এর সাথে সম্পূর্ণ মিলেছে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q11. ক্রেডিট নোট GSTR-1 এ কীভাবে দেখাবেন?</span>
+        <div class="answer"><b>উত্তর:</b> এটি Table-9B তে এন্ট্রি করতে হয় যা ট্যাক্স লায়াবিলিটি কমাতে সাহায্য করে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q12. B2B এবং B2C সাপ্লাইয়ের প্রধান পার্থক্য কী?</span>
+        <div class="answer"><b>উত্তর:</b> B2B-তে কাস্টমারের GSTIN বাধ্যতামূলক যাতে তারা ITC পায়, B2C-তে তা লাগে না।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q13. ভুল করে B2B ইনভয়েস B2C তে দেখালে সমাধান কী?</span>
+        <div class="answer"><b>উত্তর:</b> পরবর্তী মাসের রিটার্নে Amendment Table ব্যবহার করে এটি ঠিক করতে হবে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q14. Export Invoices ফাইল করার সময় কী নজর দেবেন?</span>
+        <div class="answer"><b>উত্তর:</b> এখানে Shipping Bill Number এবং তারিখ খুব গুরুত্বপূর্ণ।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q15. ফাইলিংয়ের আগে প্রধান চেকলিস্ট কী?</span>
+        <div class="answer"><b>উত্তর:</b> বুকস ম্যাচিং, ডুপ্লিকেট ইনভয়েস চেক এবং সঠিক প্লেস অফ সাপ্লাই ভেরিফিকেশন।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Success Starts with Expert Guidance!</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "অধ্যায়টি শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "অধ্যায়টি শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

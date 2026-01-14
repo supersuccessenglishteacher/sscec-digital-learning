@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Co-operative Society Guide</title>
+    <style>
+        :root { --primary: #006266; --accent: #f39c12; --bg: #f7f9f9; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; margin: 0; }
+        .address { font-size: 14px; opacity: 0.9; margin-top: 5px; }
+        .contact { font-size: 16px; margin-top: 10px; font-weight: bold; color: #ffca28; }
+
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .read-btn {
+            background: var(--accent); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            display: flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .read-btn:hover { background: #e67e22; transform: scale(1.03); }
+
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        
+        .footer { text-align: center; padding: 40px 20px; background: #2f3640; color: white; margin-top: 40px; }
+        .bullet { margin-left: 15px; padding: 5px 0; display: block; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div class="address">22/1 Bipin Paul Road, Nimta, Kolkata - 700049</div>
+    <div class="contact">📞 Mobile: 8017247298</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Co-operative অধ্যায় শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_4.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. Co-operative Society কী?</span>
+        <div class="answer"><b>উত্তর:</b> Co-operative Society হলো সদস্যদের পারস্পরিক সহযোগিতার ভিত্তিতে গঠিত একটি সংস্থা, যা West Bengal Co-operative Societies Act, 2006 ও সংশ্লিষ্ট Rules অনুযায়ী পরিচালিত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. Co-operative Society-র Accounts কোন আইন অনুযায়ী হয়?</span>
+        <div class="answer"><b>উত্তর:</b> 
+            <span class="bullet">• West Bengal Co-operative Societies Act, 2006</span>
+            <span class="bullet">• West Bengal Co-operative Rules, 2011</span>
+            <span class="bullet">• Directorate of Co-operative Audit এর নির্দেশিকা অনুযায়ী।</span>
+        </div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. Co-operative Society-তে প্রধান Books of Accounts কী কী?</span>
+        <div class="answer"><b>উত্তর:</b> Cash Book, General Ledger, Members Ledger, Share Capital Register, Loan Register, Deposit Register এবং Stock Register রাখতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. Final Accounts-এ কী কী Statement থাকে?</span>
+        <div class="answer"><b>উত্তর:</b> Receipt & Payment Account, Income & Expenditure Account, Balance Sheet এবং প্রয়োজনীয় Schedules ও Notes.</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. Reserve Fund কী এবং কেন রাখা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> Profit থেকে নির্দিষ্ট শতাংশ Reserve Fund-এ স্থানান্তর করা হয় ভবিষ্যৎ স্থিতিশীলতা ও আইনগত বাধ্যবাধকতা পূরণের জন্য।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. Share Capital Accounting কীভাবে হয়?</span>
+        <div class="answer"><b>উত্তর:</b> Member wise Share Ledger রাখা হয়। Share application money সরাসরি Share Capital-এ যোগ হয় এবং Withdrawal/Transfer আইন অনুযায়ী সম্পন্ন হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. Loan Accounting-এ কী খেয়াল রাখতে হয়?</span>
+        <div class="answer"><b>উত্তর:</b> Loan Sanction Register, Disbursement Voucher, সঠিক Interest Calculation এবং NPA বা Overdue ব্যালেন্স মনিটরিং করা।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. Audit-এ কোন বিষয়গুলো বেশি Scrutiny হয়?</span>
+        <div class="answer"><b>উত্তর:</b> 
+            <span class="bullet">• Cash balance mismatch</span>
+            <span class="bullet">• Voucher support & Loan overdue</span>
+            <span class="bullet">• Statutory non-compliance</span>
+        </div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. Statutory Registers কেন গুরুত্বপূর্ণ?</span>
+        <div class="answer"><b>উত্তর:</b> কারণ এগুলো Legal compliance প্রমাণ করে, Audit objection এড়াতে সাহায্য করে এবং Society-র Transparency বা স্বচ্ছতা বজায় রাখে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. Audit Objection কী?</span>
+        <div class="answer"><b>উত্তর:</b> যখন Accounts বা Records-এ আইন লঙ্ঘন, হিসাবের ভুল অথবা Supporting document-এর অভাব থাকে, তখন অডিটর Audit Objection দেন।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Empowering You with Knowledge!</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Co-operative অধ্যায় শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Co-operative অধ্যায় শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

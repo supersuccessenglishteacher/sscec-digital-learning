@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Corporate GST Part 3</title>
+    <style>
+        :root { --primary: #1e3799; --accent: #e67e22; --bg: #f8fafc; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; margin: 0; }
+        .address { font-size: 14px; opacity: 0.9; margin-top: 5px; }
+        .contact { font-size: 16px; margin-top: 10px; font-weight: bold; color: #ffca28; }
+
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .read-btn {
+            background: var(--accent); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            display: flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .read-btn:hover { background: #d35400; transform: scale(1.03); }
+
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16.5px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        
+        .footer { text-align: center; padding: 40px 20px; background: #1e293b; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div class="address">22/1 Bipin Paul Road, Nimta, Kolkata - 700049</div>
+    <div class="contact">📞 Mobile: 8017247298</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">অধ্যায় ৩ শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_3.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. GSTR-2B কী এবং এটি কেন গুরুত্বপূর্ণ?</span>
+        <div class="answer"><b>উত্তর:</b> GSTR-2B হলো একটি অটো-জেনারেটেড স্ট্যাটিক স্টেটমেন্ট, যা থেকে জানা যায় নির্দিষ্ট মাসে একজন করদাতা কত টাকা ITC দাবি করতে পারবেন।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. GSTR-2A এবং 2B-এর মধ্যে প্রধান পার্থক্য কী?</span>
+        <div class="answer"><b>উত্তর:</b> 2A হলো ডাইনামিক (যা বিক্রেতা ডেটা দিলে বা বদলালে সাথে সাথে বদলে যায়), কিন্তু 2B হলো স্ট্যাটিক (যা প্রতি মাসের ১৪ তারিখে তৈরি হয় এবং বদলায় না)।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. যদি কোনো ইনভয়েস GSTR-2B তে না থাকে, তবে কি তার ITC নেওয়া যাবে?</span>
+        <div class="answer"><b>উত্তর:</b> না। বর্তমান নিয়ম অনুযায়ী, যদি কোনো পারচেজ ইনভয়েস ক্রেতার GSTR-2B তে রিফ্লেক্ট না করে, তবে সেই ITC দাবি করা আইনত ভুল।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. রিকনসিলিয়েশন বা 2B Matching কেন করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> পারচেজ রেজিস্টারের সাথে পোর্টালে আসা 2B ডেটা ম্যাচ করার জন্য এটি করা হয়, যাতে অতিরিক্ত ITC দাবি করা না হয় বা কোনো ক্রেডিট বাদ না পড়ে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. Blocked Credit (সেকশন ১৭/৫) কী?</span>
+        <div class="answer"><b>উত্তর:</b> জিএসটি আইনের এমন কিছু খরচ (যেমন- ফুড অ্যান্ড বেভারেজ, হেলথ ইন্স্যুরেন্স, ব্যক্তিগত গাড়ি কেনা) যার ওপর ট্যাক্স দিলেও ITC পাওয়া যায় না।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. ভেন্ডরকে পেমেন্ট না করলে কি ITC ফেরত দিতে হয়?</span>
+        <div class="answer"><b>উত্তর:</b> হ্যাঁ। ইনভয়েস ডেট থেকে ১৮০ দিনের মধ্যে যদি ভেন্ডরকে ভ্যালু এবং ট্যাক্স পেমেন্ট না করা হয়, তবে দাবি করা ITC ১৮% সুদের সাথে রিভার্স করতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. GSTR-3B রিটার্নে কেন ইনপুট এবং আউটপুট উভয়ই থাকে?</span>
+        <div class="answer"><b>উত্তর:</b> কারণ GSTR-3B হলো একটি কম্পোজিট রিটার্ন যেখানে সেলসের ট্যাক্স থেকে পারচেজের ITC বাদ দিয়ে নেট ট্যাক্স লায়াবিলিটি বের করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. ভুলবশত অতিরিক্ত ITC দাবি করে ফেললে সমাধান কী?</span>
+        <div class="answer"><b>উত্তর:</b> পরবর্তী মাসের GSTR-3B তে 'ITC Reversal' কলামে সেটি দেখাতে হবে এবং অতিরিক্ত দিনের জন্য সুদ জমা দিতে হবে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. ITC দাবি করার সর্বোচ্চ সময়সীমা কত?</span>
+        <div class="answer"><b>উত্তর:</b> কোনো আর্থিক বছরের ITC সর্বোচ্চ পরবর্তী বছরের ৩০শে নভেম্বর পর্যন্ত অথবা অ্যানুয়াল রিটার্ন ফাইলিংয়ের মধ্যে যেটি আগে ঘটবে, সেই সময় পর্যন্ত নেওয়া যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. করপোরেট হাউসে 'ITC Mismatch' এড়ানোর সেরা উপায় কী?</span>
+        <div class="answer"><b>উত্তর:</b> প্রতি মাসে নিয়ম করে রিকনসিলিয়েশন স্টেটমেন্ট তৈরি করা এবং যে সব ভেন্ডর রিটার্ন ফাইল করেনি তাদের পেমেন্ট হোল্ড করে ফলো-আপ করা।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Excel in Your Career with SSCEC!</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "অধ্যায় ৩ শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "অধ্যায় ৩ শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

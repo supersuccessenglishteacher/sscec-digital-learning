@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Co-operative Guide Part 3</title>
+    <style>
+        :root { --primary: #006266; --accent: #f39c12; --bg: #f7f9f9; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; margin: 0; }
+        .address { font-size: 14px; opacity: 0.9; margin-top: 5px; }
+        .contact { font-size: 16px; margin-top: 10px; font-weight: bold; color: #ffca28; }
+
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .read-btn {
+            background: var(--accent); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            display: flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .read-btn:hover { background: #e67e22; transform: scale(1.03); }
+
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        
+        .footer { text-align: center; padding: 40px 20px; background: #2f3640; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div class="address">22/1 Bipin Paul Road, Nimta, Kolkata - 700049</div>
+    <div class="contact">📞 Mobile: 8017247298</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Co-operative Part-3 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_6.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. NPA বা Non-Performing Assets বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> যদি কোনো সদস্যের ঋণের কিস্তি বা সুদ ৯০ দিনের বেশি বকেয়া থাকে এবং তা আদায়ের সম্ভাবনা কমে যায়, তখন সেই লোনকে অ্যাকাউন্টিংয়ের ভাষায় NPA বলা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. NPA-র জন্য প্রভিশন (Provision) করা কেন জরুরি?</span>
+        <div class="answer"><b>উত্তর:</b> সোসাইটির আর্থিক স্বচ্ছতা বজায় রাখতে এবং ভবিষ্যৎ লোকসানের ঝুঁকি সামলাতে অডিট গাইডলাইন অনুযায়ী বকেয়া ঋণের বিপরীতে লাভ থেকে নির্দিষ্ট অর্থ সঞ্চিত রাখা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. ডিভিডেন্ড বা লভ্যাংশ দেওয়ার সর্বোচ্চ হার কত?</span>
+        <div class="answer"><b>উত্তর:</b> কো-অপারেটিভ আইন অনুযায়ী, সোসাইটি সাধারণত শেয়ার মূলধনের ওপর সর্বোচ্চ ১২% পর্যন্ত ডিভিডেন্ড ঘোষণা করতে পারে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. কো-অপারেটিভ সোসাইটিতে 'Common Good Fund' কী?</span>
+        <div class="answer"><b>উত্তর:</b> সোসাইটির নিট মুনাফার একটি ক্ষুদ্র অংশ যা সদস্যদের সামাজিক ও জনহিতকর কাজে (যেমন শিক্ষা বা অনুদান) ব্যয় করার জন্য আলাদা রাখা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. Liquid Assets বা তরল সম্পদ বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> সোসাইটির হাতে থাকা ক্যাশ ব্যালেন্স এবং ব্যাংকের সেভিংস বা কারেন্ট অ্যাকাউন্টে থাকা টাকা, যা প্রয়োজনে সাথে সাথে ব্যবহার করা যায়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. লিকুইডেশন (Liquidation) প্রক্রিয়া কী?</span>
+        <div class="answer"><b>উত্তর:</b> কোনো সোসাইটি দেউলিয়া হলে বা আইন ভাঙলে সরকারি নির্দেশে তার স্থাবর-অস্থাবর সম্পত্তি বিক্রি করে পাওনাদারদের ঋণ মেটানোর আইনি প্রক্রিয়াকে লিকুইডেশন বলে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. অডিট রিপোর্টে 'Qualified Opinion' বলতে কী বোঝায়?</span>
+        <div class="answer"><b>উত্তর:</b> যখন অডিটর দেখেন যে সোসাইটির হিসাবপত্রের কোনো নির্দিষ্ট অংশে বড় রকমের ভুল আছে বা আইন মানা হয়নি, তখন তিনি তার রিপোর্টে এই ধরনের মন্তব্য করেন।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. কো-অপারেটিভ এডুকেশন ফান্ড (Education Fund) কী?</span>
+        <div class="answer"><b>উত্তর:</b> আইন অনুযায়ী নিট মুনাফার ৫% টাকা রাজ্য কো-অপারেটিভ এডুকেশন ফান্ডে জমা দিতে হয়, যা সমবায় শিক্ষার প্রসারে ব্যবহৃত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. ইন্টারেস্ট রিসিভেবল (Interest Receivable) কীভাবে দেখানো হয়?</span>
+        <div class="answer"><b>উত্তর:</b> এটি সোসাইটির একটি চলতি সম্পদ বা Current Asset। প্রদত্ত ঋণের ওপর যে সুদ উপার্জিত হয়েছে কিন্তু এখনও আদায় হয়নি, সেটিই এখানে অন্তর্ভুক্ত হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. সোসাইটির 'Audit Rating' কীভাবে উন্নত করা যায়?</span>
+        <div class="answer"><b>উত্তর:</b> লোন রিকভারি রেট বাড়ানো, বিধিবদ্ধ রেজিস্টারগুলো নিখুঁত রাখা এবং অডিটর প্রদত্ত অবজেকশনগুলোর দ্রুত কমপ্লায়েন্স করার মাধ্যমে ভালো গ্রেড পাওয়া সম্ভব।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>Success Starts with Superior Knowledge - SSCEC</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Co-operative Part-3 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Co-operative Part-3 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>

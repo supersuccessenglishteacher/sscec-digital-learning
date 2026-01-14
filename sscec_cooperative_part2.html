@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - Co-operative Guide Part 2</title>
+    <style>
+        :root { --primary: #006266; --accent: #f39c12; --bg: #f7f9f9; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; }
+        .center-name { font-size: 26px; font-weight: bold; margin: 0; }
+        .address { font-size: 14px; opacity: 0.9; margin-top: 5px; }
+        .contact { font-size: 16px; margin-top: 10px; font-weight: bold; color: #ffca28; }
+
+        .audio-bar {
+            position: sticky; top: 0; z-index: 1000;
+            background: #ffffff; padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        .read-btn {
+            background: var(--accent); color: white; border: none;
+            padding: 12px 35px; border-radius: 30px;
+            font-size: 18px; font-weight: bold; cursor: pointer;
+            display: flex; align-items: center; gap: 10px; transition: 0.3s;
+        }
+        .read-btn:hover { background: #e67e22; transform: scale(1.03); }
+
+        .content-container { max-width: 850px; margin: 25px auto; padding: 0 20px; }
+        .qa-card {
+            background: #fff; border-radius: 12px; padding: 25px;
+            margin-bottom: 20px; border-left: 8px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .question { color: var(--primary); font-weight: bold; font-size: 19px; display: block; margin-bottom: 12px; }
+        .answer { color: #334155; font-size: 16px; line-height: 1.7; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+        
+        .footer { text-align: center; padding: 40px 20px; background: #2f3640; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center-name">Super Success Computer Education Center</div>
+    <div class="address">22/1 Bipin Paul Road, Nimta, Kolkata - 700049</div>
+    <div class="contact">📞 Mobile: 8017247298</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">
+        <span id="play-icon">▶️</span> <span id="play-text">Co-operative Part-2 শুনুন (Audio)</span>
+    </button>
+    <audio id="lessonAudio" src="q_5.mp3"></audio>
+</div>
+
+<div class="content-container">
+    <div class="qa-card">
+        <span class="question">Q1. Audit Classification বা অডিট শ্রেণিবিভাগ কী?</span>
+        <div class="answer"><b>উত্তর:</b> সোসাইটির পারফরম্যান্স ও স্বচ্ছতার ওপর ভিত্তি করে অডিটর সোসাইটিকে A, B, C বা D শ্রেণিতে ভাগ করেন। এটি সোসাইটির দক্ষতার সূচক।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q2. Cash in Hand-এর সীমা কীভাবে নির্ধারিত হয়?</span>
+        <div class="answer"><b>উত্তর:</b> সোসাইটির নিবন্ধিত 'By-Laws' এবং ম্যানেজমেন্ট কমিটির রেজোলিউশন অনুযায়ী সর্বোচ্চ কত নগদ টাকা হাতে রাখা যাবে তা ঠিক হয়। এর অতিরিক্ত টাকা ব্যাংকে জমা দিতে হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q3. Co-operative-এ 'Bad Debt' ট্রিটমেন্ট কীভাবে হয়?</span>
+        <div class="answer"><b>উত্তর:</b> অনাদায়ী ঋণগুলো (Bad Debt) কমিটির অনুমোদন সাপেক্ষে এবং অডিটরের পরামর্শে নির্দিষ্ট প্রোটোকল মেনে রাইট-অফ বা প্রভিশন করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q4. Management Committee বা বোর্ড-এর ভূমিকা কী?</span>
+        <div class="answer"><b>উত্তর:</b> সোসাইটির পলিসি নির্ধারণ, সদস্যদের আবেদন মঞ্জুর এবং দৈনন্দিন প্রশাসনিক কাজ পরিচালনার জন্য এই কমিটি দায়বদ্ধ থাকে।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q5. Annual General Meeting (AGM) কেন বাধ্যতামূলক?</span>
+        <div class="answer"><b>উত্তর:</b> অডিট রিপোর্ট অনুমোদন, লাভ-ক্ষতির বিচার, ডিভিডেন্ড ঘোষণা এবং ভবিষ্যৎ পরিকল্পনা সদস্যদের অনুমোদনের জন্য এজিএম করা বাধ্যতামূলক।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q6. সোসাইটিতে ডিভিডেন্ড (Dividend) দেওয়ার নিয়ম কী?</span>
+        <div class="answer"><b>উত্তর:</b> নিট মুনাফার একটি নির্দিষ্ট অংশ বিধিবদ্ধভাবে রিজার্ভ ফান্ডে রাখার পর, অবশিষ্ট অংশ সদস্যদের শেয়ার ক্যাপিটাল অনুযায়ী ডিভিডেন্ড হিসেবে দেওয়া হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q7. অডিট ফি (Audit Fee) কীভাবে ক্যালকুলেট করা হয়?</span>
+        <div class="answer"><b>উত্তর:</b> কো-অপারেটিভ ডিরেক্টরেটের গাইডলাইন অনুযায়ী সোসাইটির ওয়ার্কিং ক্যাপিটাল বা লেনদেনের পরিমাণের ওপর ভিত্তি করে সরকারি ফি ঠিক হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q8. কো-অপারেটিভ সোসাইটির আর্থিক বছর কোনটি?</span>
+        <div class="answer"><b>উত্তর:</b> ১লা এপ্রিল থেকে শুরু করে পরবর্তী বছরের ৩১শে মার্চ পর্যন্ত কো-অপারেটিভ সোসাইটির আর্থিক বছর গণনা করা হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q9. Cash Book-এ কেন দুটি স্বাক্ষর (Double Signature) লাগে?</span>
+        <div class="answer"><b>উত্তর:</b> আর্থিক নিরাপত্তা নিশ্চিত করতে এবং ভুল বা জালিয়াতি এড়াতে ক্যাশিয়ার ও দায়িত্বপ্রাপ্ত কর্মকর্তার (সাধারণত সম্পাদক) স্বাক্ষর প্রয়োজন হয়।</div>
+    </div>
+
+    <div class="qa-card">
+        <span class="question">Q10. অডিট কমপ্লায়েন্স রিপোর্ট (Compliance Report) কী?</span>
+        <div class="answer"><b>উত্তর:</b> অডিট রিপোর্টে অডিটর যে সব ত্রুটি বা ভুল (Objection) উল্লেখ করেছেন, সোসাইটি তা কীভাবে সমাধান করেছে তার বিস্তারিত উত্তরপত্রকে কমপ্লায়েন্স রিপোর্ট বলে।</div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Super Success Computer Education Center</p>
+    <p>সঠিক জ্ঞান, উন্নত ক্যারিয়ার — SSCEC</p>
+</div>
+
+<script>
+    const audio = document.getElementById('lessonAudio');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playIcon.innerText = "⏸️";
+            playText.innerText = "প্লে হচ্ছে...";
+        } else {
+            audio.pause();
+            playIcon.innerText = "▶️";
+            playText.innerText = "Co-operative Part-2 শুনুন (Audio)";
+        }
+    }
+    audio.onended = () => {
+        playIcon.innerText = "▶️";
+        playText.innerText = "Co-operative Part-2 শুনুন (Audio)";
+    };
+</script>
+
+</body>
+</html>
