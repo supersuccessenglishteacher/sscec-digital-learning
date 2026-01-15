@@ -4,43 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSCEC Digital Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --primary: #1e3799;
             --secondary: #006266;
             --gst-color: #eb4d4b;
             --coop-color: #27ae60;
+            --tally-color: #003057;
+            --excel-color: #217346;
+            --it-color: #2c3e50;
             --bg: #f0f2f5;
         }
         body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
-        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; text-align: center; padding: 40px 20px; }
-        .center-name { font-size: 28px; font-weight: bold; margin: 0; }
-        .dashboard { max-width: 1000px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .course-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.08); transition: 0.3s; }
-        .card-header { padding: 20px; color: white; font-size: 20px; font-weight: bold; text-align: center; }
-        .gst-header { background: var(--gst-color); }
-        .coop-header { background: var(--coop-color); }
+        
+        header { 
+            background: linear-gradient(135deg, var(--primary), var(--secondary)); 
+            color: white; 
+            text-align: center; 
+            padding: 40px 20px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .center-name { font-size: 32px; font-weight: bold; margin: 0; }
+        
+        /* Main Grid for Courses */
+        .dashboard { 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px; 
+        }
+        
+        .course-card { 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.06); 
+            transition: 0.3s; 
+            border: 1px solid #eee;
+        }
+        .course-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+        
+        .card-header { padding: 18px; color: white; font-size: 20px; font-weight: bold; text-align: center; }
+        
         .links-list { list-style: none; padding: 20px; margin: 0; }
         .course-link {
             display: flex; align-items: center; justify-content: space-between;
             text-decoration: none; color: #2d3436; background: #f9f9f9;
-            padding: 12px 20px; border-radius: 10px; margin-bottom: 10px;
+            padding: 12px 18px; border-radius: 10px; margin-bottom: 12px;
             border: 1px solid #eee; transition: 0.2s; font-weight: 500;
         }
-        .course-link:hover { background: #f0f0f0; border-color: var(--primary); color: var(--primary); }
-        .footer { text-align: center; padding: 30px; color: #7f8c8d; font-size: 14px; }
+        .course-link:hover { background: #fff; border-color: var(--primary); color: var(--primary); transform: scale(1.02); }
+        
+        /* Rules & Interview Section Container */
+        .rules-wrapper {
+            max-width: 1200px;
+            margin: 20px auto 50px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .footer { text-align: center; padding: 40px 20px; background: #fff; color: #7f8c8d; border-top: 1px solid #eee; margin-top: 50px; }
+        
+        @media (max-width: 600px) {
+            .center-name { font-size: 24px; }
+            .dashboard { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <div class="center-name">Super Success Computer Education Center</div>
-    <div style="margin-top: 10px;">ডিজিটাল লার্নিং ড্যাশবোর্ড</div>
+    <div style="margin-top: 10px; font-size: 18px; opacity: 0.9;">ডিজিটাল লার্নিং ড্যাশবোর্ড (২০২৬ এডিশন)</div>
 </header>
 
 <div class="dashboard">
+    
     <div class="course-card">
-        <div class="card-header gst-header">📦 Corporate GSTR-1</div>
+        <div class="card-header" style="background: var(--gst-color);">📦 Corporate GSTR-1</div>
         <ul class="links-list">
             <li><a href="sscec_corporate_guide.html" class="course-link"><span>Part 1: Basics</span> 🎧</a></li>
             <li><a href="sscec_part2_guide.html" class="course-link"><span>Part 2: Invoicing</span> 🎧</a></li>
@@ -49,184 +97,97 @@
     </div>
 
     <div class="course-card">
-        <div class="card-header coop-header">🏢 Co-operative Society</div>
+        <div class="card-header" style="background: var(--coop-color);">🏢 Co-operative Society</div>
         <ul class="links-list">
             <li><a href="sscec_cooperative_guide.html" class="course-link"><span>Part 1: Accounts</span> 🎧</a></li>
             <li><a href="sscec_cooperative_part2.html" class="course-link"><span>Part 2: Audit</span> 🎧</a></li>
             <li><a href="sscec_cooperative_part3.html" class="course-link"><span>Part 3: NPA & Dividend</span> 🎧</a></li>
         </ul>
     </div>
-<div class="course-card">
-        <div class="card-header" style="background: #2c3e50;">📑 Income Tax Management</div>
+
+    <div class="course-card">
+        <div class="card-header" style="background: var(--it-color);">📑 Income Tax Management</div>
         <ul class="links-list">
-            <li>
-                <a href="sscec_incometax_part1.html" class="course-link">
-                    <span>Part 1: Basics, PAN & ITR Basics</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
-            <li>
-                <a href="sscec_incometax_part2.html" class="course-link">
-                    <span>Part 2: ITR Forms & Advance Tax</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
-            <li>
-                <a href="sscec_incometax_part3.html" class="course-link">
-                    <span>Part 3: TDS Sections & Compliance</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
+            <li><a href="sscec_incometax_part1.html" class="course-link"><span>Part 1: Basics & PAN</span> 🎧</a></li>
+            <li><a href="sscec_incometax_part2.html" class="course-link"><span>Part 2: ITR & Advance Tax</span> 🎧</a></li>
+            <li><a href="sscec_incometax_part3.html" class="course-link"><span>Part 3: TDS & Compliance</span> 🎧</a></li>
         </ul>
     </div>
-<div class="course-card">
-        <div class="card-header" style="background: #003057; border-bottom: 4px solid #edba12;">📊 Tally Prime ERP Training</div>
+
+    <div class="course-card">
+        <div class="card-header" style="background: var(--tally-color); border-bottom: 4px solid #edba12;">📊 Tally Prime Training</div>
         <ul class="links-list">
-            <li>
-                <a href="sscec_tally_part1.html" class="course-link">
-                    <span>Part 1: Company Creation & Vouchers</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
-            <li>
-                <a href="sscec_tally_part2.html" class="course-link">
-                    <span>Part 2: Inventory & Stock Management</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
-            <li>
-                <a href="sscec_tally_part3.html" class="course-link">
-                    <span>Part 3: Tally with GST & E-filing</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
+            <li><a href="sscec_tally_part1.html" class="course-link"><span>Part 1: Company & Vouchers</span> 🎧</a></li>
+            <li><a href="sscec_tally_part2.html" class="course-link"><span>Part 2: Inventory Mgmt</span> 🎧</a></li>
+            <li><a href="sscec_tally_part3.html" class="course-link"><span>Part 3: GST & E-filing</span> 🎧</a></li>
         </ul>
     </div>
-<div class="course-card">
-        <div class="card-header" style="background: #217346; border-bottom: 4px solid #107c10;">📈 Advanced MS Excel Mastery</div>
+
+    <div class="course-card">
+        <div class="card-header" style="background: var(--excel-color); border-bottom: 4px solid #107c10;">📈 Advanced MS Excel</div>
         <ul class="links-list">
-            <li>
-                <a href="sscec_excel_part1.html" class="course-link">
-                    <span>Part 1: Functions & Data Tools</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
-            <li>
-                <a href="sscec_excel_part2.html" class="course-link">
-                    <span>Part 2: Pivot Table & Dashboards</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
-            <li>
-                <a href="sscec_excel_part3.html" class="course-link">
-                    <span>Part 3: Advanced Tools & Formulas</span>
-                    <span class="icon">🎧</span>
-                </a>
-            </li>
+            <li><a href="sscec_excel_part1.html" class="course-link"><span>Part 1: Functions & Tools</span> 🎧</a></li>
+            <li><a href="sscec_excel_part2.html" class="course-link"><span>Part 2: Pivot & Dashboards</span> 🎧</a></li>
+            <li><a href="sscec_excel_part3.html" class="course-link"><span>Part 3: Advanced Formulas</span> 🎧</a></li>
         </ul>
-    </div>   
+    </div>
 </div>
-<div class="sscec-rules-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+<div class="rules-wrapper">
     
-    <div class="rule-card" style="flex: 1; min-width: 300px; max-width: 380px; background: #fffde6; border: 2px solid #d4af37; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
-        <div style="background: #d4af37; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">
-            📜 Golden Rules (সনাতন)
-        </div>
+    <div style="flex: 1; min-width: 320px; max-width: 380px; background: #fffde6; border: 2px solid #d4af37; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+        <div style="background: #d4af37; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">📜 Golden Rules (সনাতন)</div>
         <div style="padding: 20px; flex-grow: 1;">
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+            <table style="width: 100%; border-collapse: collapse;">
                 <tr style="border-bottom: 1px solid #ddd;">
-                    <th style="text-align: left; padding: 8px;">Account Type</th>
+                    <th style="text-align: left; padding: 8px;">A/C Type</th>
                     <th style="color: #27ae60;">Debit</th>
                     <th style="color: #c0392b;">Credit</th>
                 </tr>
-                <tr>
-                    <td style="padding: 8px;"><b>Personal</b></td>
-                    <td style="text-align: center;">পায়</td>
-                    <td style="text-align: center;">দেয়</td>
-                </tr>
-                <tr>
-                    <td style="padding: 8px;"><b>Real</b></td>
-                    <td style="text-align: center;">আসে</td>
-                    <td style="text-align: center;">যায়</td>
-                </tr>
-                <tr>
-                    <td style="padding: 8px;"><b>Nominal</b></td>
-                    <td style="text-align: center;">খরচ</td>
-                    <td style="text-align: center;">আয়</td>
-                </tr>
+                <tr><td style="padding: 8px;">Personal</td><td align="center">পায়</td><td align="center">দেয়</td></tr>
+                <tr><td style="padding: 8px;">Real</td><td align="center">আসে</td><td align="center">যায়</td></tr>
+                <tr><td style="padding: 8px;">Nominal</td><td align="center">খরচ</td><td align="center">আয়</td></tr>
             </table>
         </div>
-        <div style="padding: 15px; background: #fdfae3; text-align: center;">
-            <a href="sscec_golden_rules.html" style="display: block; background: #2c3e50; color: white; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold; font-size: 14px;">বিস্তারিত শিখুন ➡️</a>
-        </div>
+        <a href="sscec_golden_rules.html" style="margin: 15px; background: #2c3e50; color: white; text-align: center; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold;">বিস্তারিত শিখুন</a>
     </div>
 
-    <div class="rule-card" style="flex: 1; min-width: 300px; max-width: 380px; background: #e6f7ff; border: 2px solid #2980b9; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
-        <div style="background: #2980b9; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">
-            📊 Modern Rules (আধুনিক)
-        </div>
+    <div style="flex: 1; min-width: 320px; max-width: 380px; background: #e6f7ff; border: 2px solid #2980b9; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+        <div style="background: #2980b9; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">📊 Modern Rules (আধুনিক)</div>
         <div style="padding: 20px; flex-grow: 1;">
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+            <table style="width: 100%; border-collapse: collapse;">
                 <tr style="border-bottom: 1px solid #ddd;">
-                    <th style="text-align: left; padding: 8px;">ALEC-E</th>
-                    <th style="color: #27ae60;">Increase</th>
-                    <th style="color: #c0392b;">Decrease</th>
+                    <th style="text-align: left; padding: 8px;">Category</th>
+                    <th style="color: #27ae60;">Up</th>
+                    <th style="color: #c0392b;">Down</th>
                 </tr>
-                <tr>
-                    <td style="padding: 8px;"><b>Assets/Exp</b></td>
-                    <td style="text-align: center;">Debit</td>
-                    <td style="text-align: center;">Credit</td>
-                </tr>
-                <tr>
-                    <td style="padding: 8px;"><b>Liab/Cap</b></td>
-                    <td style="text-align: center;">Credit</td>
-                    <td style="text-align: center;">Debit</td>
-                </tr>
-                <tr>
-                    <td style="padding: 8px;"><b>Revenue</b></td>
-                    <td style="text-align: center;">Credit</td>
-                    <td style="text-align: center;">Debit</td>
-                </tr>
+                <tr><td style="padding: 8px;">Asset/Exp</td><td align="center">Dr</td><td align="center">Cr</td></tr>
+                <tr><td style="padding: 8px;">Liab/Cap</td><td align="center">Cr</td><td align="center">Dr</td></tr>
+                <tr><td style="padding: 8px;">Revenue</td><td align="center">Cr</td><td align="center">Dr</td></tr>
             </table>
         </div>
-        <div style="padding: 15px; background: #f0faff; text-align: center;">
-            <a href="sscec_modern_rules.html" style="display: block; background: #2c3e50; color: white; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold; font-size: 14px;">বিস্তারিত শিখুন ➡️</a>
-        </div>
+        <a href="sscec_modern_rules.html" style="margin: 15px; background: #2c3e50; color: white; text-align: center; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold;">বিস্তারিত শিখুন</a>
     </div>
 
-    <div class="rule-card" style="flex: 1; min-width: 300px; max-width: 380px; background: #f0fff4; border: 2px solid #27ae60; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
-        <div style="background: #27ae60; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">
-            💼 Interview Preparation
-        </div>
+    <div style="flex: 1; min-width: 320px; max-width: 380px; background: #f0fff4; border: 2px solid #27ae60; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+        <div style="background: #27ae60; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">💼 Interview Preparation</div>
         <div style="padding: 20px; flex-grow: 1; text-align: center;">
-            <i class="fas fa-user-tie" style="font-size: 40px; color: #27ae60; margin-bottom: 10px;"></i>
-            <h3 style="margin: 10px 0; color: #2c3e50; font-size: 1.2rem;">Panel Accountant Q&A</h3>
-            <p style="font-size: 0.9rem; color: #666; line-height: 1.4;">সমবায় সমিতির ইন্টারভিউয়ের জন্য সেরা ১০টি বাস্তবমুখী প্রশ্ন ও উত্তর। (Audio গাইড সহ)</p>
-            
-            <div style="margin-top: 10px; display: inline-block; background: #eafaf1; color: #27ae60; padding: 5px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; border: 1px solid #27ae60;">
-                <i class="fas fa-award"></i> ৩০ বছরের অভিজ্ঞতা সমৃদ্ধ
-            </div>
+            <i class="fas fa-user-tie" style="font-size: 40px; color: #27ae60;"></i>
+            <h3 style="margin: 10px 0;">Panel Accountant Q&A</h3>
+            <p style="font-size: 14px; color: #666;">সেরা ১০টি বাস্তবমুখী প্রশ্ন ও উত্তর। (Audio সহ)</p>
+            <div style="background: #eafaf1; color: #27ae60; padding: 5px; border-radius: 4px; font-size: 12px; font-weight: bold;">৩০ বছরের অভিজ্ঞতা সমৃদ্ধ</div>
         </div>
-        <div style="padding: 15px; background: #f7fff9; text-align: center;">
-            <a href="sscec_panel_accountant_interview.html" style="display: block; background: #2c3e50; color: white; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold; font-size: 14px;">প্রস্তুতি শুরু করুন ➡️</a>
-        </div>
+        <a href="sscec_panel_accountant_interview.html" style="margin: 15px; background: #2c3e50; color: white; text-align: center; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold;">প্রস্তুতি শুরু করুন</a>
     </div>
 
 </div>
 
-<div class="footer" style="text-align: center; padding: 20px; color: #7f8c8d; font-family: sans-serif; border-top: 1px solid #eee; margin-top: 20px;">
-    <p style="margin: 0;">Mobile: 8017247298 | © 2026 SSCEC</p>
-</div>
-        
-</div>
-<div class="footer">
-    <p>Mobile: 8017247298 | © 2024 SSCEC</p>
-</div>
+<footer class="footer">
+    <div style="font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Super Success Computer Education Center</div>
+    <p style="margin: 5px 0;">📍 ঠিকানা: উত্তর দমদম, পশ্চিমবঙ্গ</p>
+    <p style="margin: 5px 0;">📞 যোগাযোগ: 8017247298</p>
+    <p style="margin: 15px 0 0; font-size: 12px; opacity: 0.7;">© 2026 SSCEC | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
-
-
-
-
-
