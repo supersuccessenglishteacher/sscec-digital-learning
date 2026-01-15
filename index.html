@@ -14,6 +14,7 @@
             --tally-color: #003057;
             --excel-color: #217346;
             --it-color: #2c3e50;
+            --audit-color: #2980b9;
             --bg: #f0f2f5;
         }
         body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
@@ -45,12 +46,14 @@
             box-shadow: 0 8px 16px rgba(0,0,0,0.06); 
             transition: 0.3s; 
             border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
         }
         .course-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
         
         .card-header { padding: 18px; color: white; font-size: 20px; font-weight: bold; text-align: center; }
         
-        .links-list { list-style: none; padding: 20px; margin: 0; }
+        .links-list { list-style: none; padding: 20px; margin: 0; flex-grow: 1; }
         .course-link {
             display: flex; align-items: center; justify-content: space-between;
             text-decoration: none; color: #2d3436; background: #f9f9f9;
@@ -69,6 +72,8 @@
             justify-content: center;
             padding: 0 20px;
         }
+
+        .rule-card-inner { flex: 1; min-width: 320px; max-width: 380px; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
 
         .footer { text-align: center; padding: 40px 20px; background: #fff; color: #7f8c8d; border-top: 1px solid #eee; margin-top: 50px; }
         
@@ -106,6 +111,19 @@
     </div>
 
     <div class="course-card">
+        <div class="card-header" style="background: var(--audit-color); border-bottom: 4px solid #34495e;">🔍 Audit & Inspection</div>
+        <ul class="links-list">
+            <li><a href="sscec_auditor_role.html" class="course-link"><span>অডিটরের কাজ কী? (সহজ পাঠ)</span> 🎧</a></li>
+            <li style="padding: 10px; font-size: 0.85rem; color: #666; text-align: center; border-top: 1px dashed #eee;">
+                <i class="fas fa-info-circle"></i> সমবায় অডিট ও তদন্তের প্রাথমিক গাইড
+            </li>
+        </ul>
+        <div style="padding: 15px; text-align: center; background: #f0f7ff; border-top: 1px solid #eee;">
+            <a href="sscec_auditor_role.html" style="text-decoration: none; font-size: 0.95rem; color: var(--audit-color); font-weight: bold;">বিস্তারিত দেখুন →</a>
+        </div>
+    </div>
+
+    <div class="course-card">
         <div class="card-header" style="background: var(--it-color);">📑 Income Tax Management</div>
         <ul class="links-list">
             <li><a href="sscec_incometax_part1.html" class="course-link"><span>Part 1: Basics & PAN</span> 🎧</a></li>
@@ -135,7 +153,7 @@
 
 <div class="rules-wrapper">
     
-    <div style="flex: 1; min-width: 320px; max-width: 380px; background: #fffde6; border: 2px solid #d4af37; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+    <div class="rule-card-inner" style="background: #fffde6; border: 2px solid #d4af37;">
         <div style="background: #d4af37; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">📜 Golden Rules (সনাতন)</div>
         <div style="padding: 20px; flex-grow: 1;">
             <table style="width: 100%; border-collapse: collapse;">
@@ -152,7 +170,7 @@
         <a href="sscec_golden_rules.html" style="margin: 15px; background: #2c3e50; color: white; text-align: center; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold;">বিস্তারিত শিখুন</a>
     </div>
 
-    <div style="flex: 1; min-width: 320px; max-width: 380px; background: #e6f7ff; border: 2px solid #2980b9; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+    <div class="rule-card-inner" style="background: #e6f7ff; border: 2px solid #2980b9;">
         <div style="background: #2980b9; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">📊 Modern Rules (আধুনিক)</div>
         <div style="padding: 20px; flex-grow: 1;">
             <table style="width: 100%; border-collapse: collapse;">
@@ -169,39 +187,16 @@
         <a href="sscec_modern_rules.html" style="margin: 15px; background: #2c3e50; color: white; text-align: center; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold;">বিস্তারিত শিখুন</a>
     </div>
 
-    <div style="flex: 1; min-width: 320px; max-width: 380px; background: #f0fff4; border: 2px solid #27ae60; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+    <div class="rule-card-inner" style="background: #f0fff4; border: 2px solid #27ae60;">
         <div style="background: #27ae60; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 18px;">💼 Interview Preparation</div>
         <div style="padding: 20px; flex-grow: 1; text-align: center;">
             <i class="fas fa-user-tie" style="font-size: 40px; color: #27ae60;"></i>
-            <h3 style="margin: 10px 0;">Panel Accountant Q&A</h3>
-            <p style="font-size: 14px; color: #666;">সেরা ১০টি বাস্তবমুখী প্রশ্ন ও উত্তর। (Audio সহ)</p>
-            <div style="background: #eafaf1; color: #27ae60; padding: 5px; border-radius: 4px; font-size: 12px; font-weight: bold;">৩০ বছরের অভিজ্ঞতা সমৃদ্ধ</div>
+            <h3 style="margin: 10px 0; color: #2c3e50;">Panel Accountant Q&A</h3>
+            <p style="font-size: 14px; color: #666; margin-bottom: 10px;">সেরা ১০টি বাস্তবমুখী প্রশ্ন ও উত্তর। (Audio সহ)</p>
+            <div style="display: inline-block; background: #eafaf1; color: #27ae60; padding: 5px 10px; border-radius: 4px; font-size: 12px; font-weight: bold;">৩০ বছরের অভিজ্ঞতা সমৃদ্ধ</div>
         </div>
         <a href="sscec_panel_accountant_interview.html" style="margin: 15px; background: #2c3e50; color: white; text-align: center; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold;">প্রস্তুতি শুরু করুন</a>
     </div>
-
-<div class="course-card">
-    <div class="card-header" style="background: #2980b9; border-bottom: 4px solid #34495e;">
-        🔍 Audit & Inspection
-    </div>
-    <ul class="links-list">
-        <li>
-            <a href="sscec_auditor_role.html" class="course-link">
-                <span>অডিটরের কাজ কী? (সহজ পাঠ)</span>
-                <span class="icon">🎧</span>
-            </a>
-        </li>
-        <li style="padding: 10px; font-size: 0.85rem; color: #666; text-align: center; border-top: 1px dashed #eee;">
-            <i class="fas fa-info-circle"></i> সমবায় অডিট ও তদন্তের প্রাথমিক গাইড
-        </li>
-    </ul>
-    <div style="padding: 10px; text-align: center; background: #f0f7ff;">
-        <a href="sscec_auditor_role.html" style="text-decoration: none; font-size: 0.9rem; color: #2980b9; font-weight: bold;">
-            বিস্তারিত দেখুন →
-        </a>
-    </div>
-</div>
-
 
 </div>
 
