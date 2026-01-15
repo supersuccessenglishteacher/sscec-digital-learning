@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Rules of Accounting - SSCEC</title>
+    <style>
+        :root { --primary: #2980b9; --success: #27ae60; --danger: #c0392b; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; text-align: center; padding: 35px 15px; }
+        .audio-bar { position: sticky; top: 0; z-index: 1000; background: #fff; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; justify-content: center; }
+        .read-btn { background: var(--primary); color: white; border: none; padding: 12px 30px; border-radius: 25px; font-weight: bold; cursor: pointer; }
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        .modern-card { background: white; border-radius: 12px; padding: 25px; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        
+        /* Modern Table Styling */
+        .modern-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 18px; }
+        .modern-table th, .modern-table td { padding: 15px; border: 1px solid #ddd; text-align: center; }
+        .modern-table th { background: #34495e; color: white; }
+        .inc { color: var(--success); font-weight: bold; font-size: 20px; }
+        .dec { color: var(--danger); font-weight: bold; font-size: 20px; }
+        
+        .formula-box { background: #e8f6f3; border: 2px dashed #1abc9c; padding: 20px; border-radius: 10px; text-align: center; font-size: 22px; font-weight: bold; color: #16a085; }
+        .nav-btns { display: flex; justify-content: space-between; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 26px; font-weight: bold;">Super Success Computer Education Center</div>
+    <div style="margin-top:8px;">Modern Accounting Rules (ALEC-E)</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">▶️ মডার্ন নিয়মগুলো শুনুন</button>
+    <audio id="lessonAudio" src="modern_rules.mp3"></audio>
+</div>
+
+<div class="container">
+    
+    <div class="formula-box">
+        Assets = Liabilities + Equity (Capital)
+    </div>
+
+    <div class="modern-card">
+        <h3>📊 মডার্ন ডেবিট-ক্রেডিট চার্ট</h3>
+        <table class="modern-table">
+            <thead>
+                <tr>
+                    <th>অ্যাকাউন্টের ধরণ</th>
+                    <th>বাড়লে (Increase)</th>
+                    <th>কমলে (Decrease)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Assets</b> (সম্পত্তি)</td>
+                    <td class="inc">Debit</td>
+                    <td class="dec">Credit</td>
+                </tr>
+                <tr>
+                    <td><b>Expenses</b> (খরচ)</td>
+                    <td class="inc">Debit</td>
+                    <td class="dec">Credit</td>
+                </tr>
+                <tr>
+                    <td><b>Liabilities</b> (দায়)</td>
+                    <td class="dec">Credit</td>
+                    <td class="inc">Debit</td>
+                </tr>
+                <tr>
+                    <td><b>Equity / Capital</b> (মূলধন)</td>
+                    <td class="dec">Credit</td>
+                    <td class="inc">Debit</td>
+                </tr>
+                <tr>
+                    <td><b>Revenue</b> (আয়)</td>
+                    <td class="dec">Credit</td>
+                    <td class="inc">Debit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modern-card" style="border-left: 6px solid #f1c40f; background: #fffde7;">
+        <h4>💡 প্রফেশনাল টিপস:</h4>
+        <p>মনে রাখার সহজ শর্টকাট হলো <b>"DEAD"</b> এবং <b>"CLIC"</b>।</p>
+        <ul>
+            <li><b>DEAD:</b> Debit Expenses, Assets, and Drawings (বাড়লে ডেবিট)।</li>
+            <li><b>CLIC:</b> Credit Liabilities, Income, and Capital (বাড়লে ক্রেডিট)।</li>
+        </ul>
+    </div>
+
+    <div class="nav-btns">
+        <a href="sscec_golden_rules.html" style="text-decoration: none; background: #7f8c8d; color: white; padding: 12px 25px; border-radius: 5px; font-weight: bold;">⬅️ Golden Rules</a>
+        <a href="sscec_gstr1_table1.html" style="text-decoration: none; background: #2c3e50; color: white; padding: 12px 25px; border-radius: 5px; font-weight: bold;">GSTR-1 Guide ➡️</a>
+    </div>
+</div>
+
+<script>
+    function toggleAudio() {
+        const audio = document.getElementById('lessonAudio');
+        audio.paused ? audio.play() : audio.pause();
+    }
+</script>
+
+</body>
+</html>

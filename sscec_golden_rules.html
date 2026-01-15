@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Golden Rules - SSCEC</title>
+    <style>
+        :root { --primary: #2c3e50; --gold: #d4af37; --bg: #fdfdfd; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; color: #333; }
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; border-bottom: 5px solid var(--gold); }
+        .audio-bar { position: sticky; top: 0; z-index: 1000; background: #fff; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; justify-content: center; }
+        .read-btn { background: var(--primary); color: white; border: none; padding: 12px 30px; border-radius: 25px; font-weight: bold; cursor: pointer; border: 2px solid var(--gold); }
+        .container { max-width: 850px; margin: 30px auto; padding: 0 20px; }
+        .rule-card { background: white; border-radius: 12px; padding: 25px; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 5px solid var(--gold); }
+        h3 { color: var(--primary); margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .example-box { background: #fff9e6; border-left: 5px solid var(--gold); padding: 15px; margin: 20px 0; font-style: italic; }
+        
+        /* Cheat Sheet Table */
+        .cheat-sheet { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .cheat-sheet th, .cheat-sheet td { border: 1px solid #ddd; padding: 15px; text-align: center; }
+        .cheat-sheet th { background-color: var(--primary); color: white; }
+        .debit { color: #27ae60; font-weight: bold; }
+        .credit { color: #c0392b; font-weight: bold; }
+        
+        .footer { text-align: center; padding: 20px; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 26px; font-weight: bold;">Super Success Computer Education Center</div>
+    <div style="margin-top:8px;">Golden Rules of Accounting (হিসাববিজ্ঞানের মূল নিয়ম)</div>
+</header>
+
+<div class="audio-bar">
+    <button class="read-btn" onclick="toggleAudio()">▶️ নিয়মগুলো শুনুন (Audio)</button>
+    <audio id="lessonAudio" src="golden_rules.mp3"></audio>
+</div>
+
+<div class="container">
+    
+    <div class="rule-card">
+        <h3>১. Personal Account (ব্যক্তিগত হিসাব)</h3>
+        <p>যেকোনো মানুষ, কোম্পানি বা প্রতিষ্ঠানের নামের হিসাব। (যেমন: রাম, রহিম, টাটা কোম্পানি, বা ব্যাংক)।</p>
+        <p><b>নিয়ম:</b> যে সুবিধা পায় সে <b>Debit</b>, আর যে সুবিধা দেয় সে <b>Credit</b>।</p>
+    </div>
+
+    <div class="rule-card">
+        <h3>২. Real Account (সম্পত্তি বা জিনিসের হিসাব)</h3>
+        <p>ব্যবসায় যা কিছু ছোঁয়া যায় বা যার মালিকানা আছে। (যেমন: ক্যাশ টাকা, আসবাবপত্র, কম্পিউটার)।</p>
+        <p><b>নিয়ম:</b> যা ভেতরে আসে তা <b>Debit</b>, আর যা বাইরে চলে যায় তা <b>Credit</b>।</p>
+    </div>
+
+    <div class="rule-card">
+        <h3>৩. Nominal Account (আয় ও ব্যয়ের হিসাব)</h3>
+        <p>ব্যবসায় যত ধরণের খরচ, ক্ষতি, লাভ বা আয় হয়। (যেমন: বেতন, ভাড়া, কমিশন পাওয়া)।</p>
+        <p><b>নিয়ম:</b> সব খরচ ও ক্ষতি <b>Debit</b>, আর সব আয় ও লাভ <b>Credit</b>।</p>
+    </div>
+
+    <div class="example-box">
+        <strong>💡 উদাহরণ:</strong> ১০,০০০ টাকা দিয়ে কম্পিউটার কিনলে— কম্পিউটার ব্যবসায় আসছে (Real Account - In) তাই <b>Debit</b>; ক্যাশ টাকা চলে যাচ্ছে (Real Account - Out) তাই <b>Credit</b>।
+    </div>
+
+    <h2 style="text-align: center; color: var(--primary);">📊 ঝটপট মনে রাখার ছক (Cheat Sheet)</h2>
+    <table class="cheat-sheet">
+        <thead>
+            <tr>
+                <th>অ্যাকাউন্টের ধরণ</th>
+                <th>Debit (+)</th>
+                <th>Credit (-)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Personal</b> (ব্যক্তি)</td>
+                <td class="debit">গ্রহীতা (Receiver)</td>
+                <td class="credit">দাতা (Giver)</td>
+            </tr>
+            <tr>
+                <td><b>Real</b> (জিনিস)</td>
+                <td class="debit">যা আসে (Comes In)</td>
+                <td class="credit">যা যায় (Goes Out)</td>
+            </tr>
+            <tr>
+                <td><b>Nominal</b> (আয়/ব্যয়)</td>
+                <td class="debit">সব খরচ / লস</td>
+                <td class="credit">সব আয় / লাভ</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 SSCEC | Accounting Foundations Series</p>
+</div>
+
+<script>
+    function toggleAudio() {
+        const audio = document.getElementById('lessonAudio');
+        audio.paused ? audio.play() : audio.pause();
+    }
+</script>
+
+</body>
+</html>
