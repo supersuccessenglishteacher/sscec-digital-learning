@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPA & Dividend Calculation - SSCEC Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary: #c0392b; --secondary: #2980b9; --success: #27ae60; --bg: #fdfefe; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; margin: 0; }
+        header { background: linear-gradient(135deg, #2c3e50, #000); color: white; text-align: center; padding: 30px 15px; }
+        .container { max-width: 900px; margin: 20px auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+        .topic-header { background: #eee; padding: 10px 20px; border-radius: 8px; font-weight: bold; font-size: 1.3rem; margin-top: 30px; display: flex; align-items: center; gap: 10px; border-left: 6px solid var(--primary); }
+        .npa-header { border-left-color: var(--primary); color: var(--primary); }
+        .div-header { border-left-color: var(--secondary); color: var(--secondary); }
+
+        .math-box { background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 10px; margin: 15px 0; font-family: 'Courier New', Courier, monospace; }
+        .result-text { color: var(--success); font-weight: bold; font-size: 1.1rem; }
+        .easy-quote { background: #fffde6; padding: 10px 15px; border-radius: 5px; border-left: 4px solid #f1c40f; font-style: italic; margin-top: 10px; }
+
+        .audio-bar { background: #eef2f7; padding: 15px; border-radius: 10px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+        .interview-footer { background: #2c3e50; color: white; padding: 25px; border-radius: 12px; text-align: center; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Super Success Computer Education Center</h1>
+    <p>📘 NPA এবং Dividend Calculation (হুবহু প্র্যাক্টিক্যাল গাইড)</p>
+</header>
+
+<div class="container">
+    <div class="audio-bar">
+        <span><i class="fas fa-play-circle"></i> <strong>অডিও লেসন শুনুন</strong></span>
+        <audio controls><source src="sscec_npa_dividend_guide.mp3" type="audio/mpeg"></audio>
+    </div>
+
+    <div class="topic-header npa-header"><i class="fas fa-exclamation-circle"></i> 📘 1️⃣ NPA (Non-Performing Asset) কী ও কিভাবে হিসাব হয়</div>
+    
+    <p><strong>NPA মানে কী?</strong> ধরা যাক— সোসাইটি কাউকে লোন দিয়েছে কিন্তু সে অনেক দিন ধরে টাকা ফেরত দিচ্ছে না, তখন সেই লোনটাকে বলে NPA।</p>
+    <div class="easy-quote">👉 সহজ ভাষায়: “যে লোন আর কাজ করছে না, সেটাই NPA।”</div>
+
+    <p><strong>কখন লোন NPA হয়?</strong> যদি কোনো লোনের কিস্তি বা সুদ ৯০ দিন বা তার বেশি সময় বকেয়া থাকে, তাহলে সেই লোন = NPA।</p>
+
+    <p><strong>NPA কিভাবে হিসাব করবেন? (Example)</strong></p>
+    <div class="math-box">
+        সোসাইটির মোট লোন = ₹10,00,000 <br>
+        বকেয়া লোন = ₹1,50,000 <br><br>
+        ✏️ হিসাব:<br>
+        NPA Percentage = (বকেয়া লোন ÷ মোট লোন) × 100 <br>
+        = (1,50,000 ÷ 10,00,000) × 100 <br>
+        = <strong>15%</strong>
+    </div>
+    <p class="result-text">👉 মানে ১৫% লোন আদায় হচ্ছে না।</p>
+    <div class="easy-quote">👉 সহজ ভাষায়: “১০ টাকার মধ্যে দেড় টাকা ফেরত আসছে না।”</div>
+
+    <div class="topic-header div-header"><i class="fas fa-chart-pie"></i> 📘 2️⃣ Dividend Calculation কী ও কিভাবে হয়</div>
+    
+    <p><strong>Dividend মানে কী?</strong> লাভের টাকা সদস্যদের ভাগ করে দেওয়া।</p>
+    <div class="easy-quote">👉 সহজ ভাষায়: “সোসাইটি লাভ করলে, সেই লাভের কিছু অংশ সদস্যদের দেওয়া।”</div>
+
+    <p><strong>Dividend দেওয়ার আগে কী করতে হয়?</strong> আইন অনুযায়ী আগে— ১) নিট লাভ বের করা, ২) ২৫% Reserve Fund, ৩) ৫% Education Fund, এবং তারপর Dividend।</p>
+
+    <p><strong>Dividend হিসাব (Example)</strong></p>
+    <div class="math-box">
+        নিট লাভ = ₹1,00,000 <br><br>
+        Step-1: Reserve Fund (25% of 1,00,000) = ₹25,000 <br>
+        Step-2: Education Fund (5% of 1,00,000) = ₹5,000 <br>
+        Step-3: বাকি টাকা (1,00,000 − 25,000 − 5,000) = <strong>₹70,000</strong>
+    </div>
+    <p>👉 এই ₹৭০,০০০ টাকা থেকেই Dividend দেওয়া যাবে। সর্বোচ্চ ১২% পর্যন্ত Dividend দেওয়া যায় এবং এটি শেয়ারের উপর হিসাব হয়।</p>
+
+    <p><strong>Dividend হিসাব (শেয়ার অনুযায়ী)</strong></p>
+    <div class="math-box">
+        মোট শেয়ার ক্যাপিটাল = ₹5,00,000 <br>
+        Dividend rate = 10% <br><br>
+        Dividend = 10% of 5,00,000 = <strong>₹50,000</strong>
+    </div>
+    <p class="result-text">👉 এই ₹৫০,০০০ সদস্যদের শেয়ার অনুযায়ী ভাগ হবে।</p>
+    <div class="easy-quote">👉 সহজ ভাষায়: “যার শেয়ার বেশি, তার ভাগ বেশি।”</div>
+
+    <div class="interview-footer">
+        <h3>🎯 এক লাইনের Interview Ready Answer</h3>
+        <p>“NPA হলো এমন লোন যা দীর্ঘদিন আদায় হয়নি, আর Dividend হলো আইনি সংস্থান মিটিয়ে লাভের টাকা সদস্যদের মধ্যে শেয়ার অনুযায়ী বণ্টন করা।”</p>
+        <a href="index.html" style="color: white; font-weight: bold; text-decoration: none;">[ ফিরে যান ড্যাশবোর্ডে ]</a>
+    </div>
+</div>
+
+</body>
+</html>
