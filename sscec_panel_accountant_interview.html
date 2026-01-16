@@ -3,202 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel Accountant Interview Q&A - SSCEC</title>
+    <title>SSCEC Smart Interview Master 2026</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #27ae60;
-            --dark: #2c3e50;
-            --light: #f4f9f4;
-            --accent: #e67e22;
-        }
-
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: var(--light);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background: var(--dark);
-            color: white;
-            padding: 30px 15px;
-            text-align: center;
-            border-bottom: 5px solid var(--primary);
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .intro-box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-            border-left: 5px solid var(--accent);
-        }
-
-        .qa-section {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .qa-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-
-        .qa-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .question {
-            background: var(--primary);
-            color: white;
-            padding: 15px 20px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .answer {
-            padding: 20px;
-            background: white;
-            color: #333;
-            border-top: 1px solid #eee;
-        }
-
-        .answer strong {
-            color: var(--primary);
-        }
-
-        .highlight-text {
-            color: var(--accent);
-            font-weight: bold;
-        }
-
-        .nav-footer {
-            margin-top: 50px;
-            text-align: center;
-            padding-bottom: 50px;
-        }
-
-        .btn-back {
-            text-decoration: none;
-            background: var(--dark);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn-back:hover {
-            background: var(--accent);
-        }
-
-        @media (max-width: 600px) {
-            .question { font-size: 1rem; }
-        }
+        :root { --primary-bg: #f0f4f7; --accent-color: #27ae60; --blue-theme: #1e3799; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--primary-bg); margin: 0; padding: 0; color: #333; }
+        header { background: linear-gradient(135deg, #1e3799, #0984e3); color: white; text-align: center; padding: 40px 20px; border-bottom: 5px solid var(--accent-color); }
+        .container { max-width: 850px; margin: -30px auto 50px; padding: 0 20px; }
+        .intro-box { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; margin-bottom: 30px; }
+        .qa-card { background: white; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 6px solid var(--blue-theme); transition: 0.3s; }
+        .qa-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        .question { font-size: 1.15rem; font-weight: bold; color: var(--blue-theme); margin-bottom: 15px; display: flex; gap: 10px; align-items: flex-start; }
+        .answer { background: #f8fef9; padding: 18px; border-radius: 10px; border-left: 4px solid var(--accent-color); font-size: 1.05rem; line-height: 1.6; }
+        .controls { margin-top: 15px; }
+        .play-btn { background: var(--accent-color); color: white; border: none; padding: 10px 20px; border-radius: 30px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: 0.2s; }
+        .play-btn:hover { background: #219150; transform: scale(1.05); }
+        .confidence-box { background: #eafaf1; border: 2px dashed var(--accent-color); padding: 30px; text-align: center; border-radius: 20px; margin-top: 40px; }
+        footer { text-align: center; padding: 40px; color: #7f8c8d; border-top: 1px solid #ddd; margin-top: 40px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Super Success Computer Education Center</h1>
-    <p>Panel Accountant – Top 10 Interview Ready Answers</p>
-    <small>(West Bengal Co-operative Societies – Practical Level)</small>
+    <h1 style="margin:0;">🎤 SSCEC Smart Interview Master</h1>
+    <p>Panel Accountant Prep • Professional Audio Guide</p>
 </header>
-<div style="max-width: 800px; margin: 20px auto; background: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; gap: 20px;">
-    <span style="font-weight: bold; color: #2c3e50;"><i class="fas fa-headphones"></i> অডিও গাইড শুনুন:</span>
-    <audio controls style="height: 40px;">
-        <source src="sscec_panel_accountant_qa.mp3" type="audio/mpeg">
-        আপনার ব্রাউজারটি অডিও সাপোর্ট করছে না।
-    </audio>
-</div>
 
 <div class="container">
     <div class="intro-box">
-        <strong>💡 টিপস:</strong> এই উত্তরগুলো আপনার ৩০ বছরের বাস্তব অভিজ্ঞতা এবং সমবায় আইনের (Co-operative Act & Rules) ওপর ভিত্তি করে তৈরি। ইন্টারভিউ বোর্ডে আত্মবিশ্বাসের সাথে এগুলো উপস্থাপন করুন।
+        <h2>সুপার সাকসেস কম্পিউটার এডুকেশন সেন্টার</h2>
+        <p>নিচে ১৫টি ইন্টারভিউ প্রশ্নোত্তর আপনার নিজস্ব অডিওসহ দেওয়া হলো।</p>
     </div>
 
-    <div class="qa-section">
-        
+    <div id="interview-content">
         <div class="qa-card">
-            <div class="question"><span>1.</span> আপনি কেন Panel Accountant হতে চান?</div>
-            <div class="answer">“স্যার, আমি প্রায় ৩০ বছর ধরে সমবায় ও অডিট সংক্রান্ত কাজে যুক্ত। আমার লক্ষ্য শুধু হিসাব লেখা নয়, বরং আইন মেনে স্বচ্ছভাবে সমিতির হিসাব পরিচালনা করা। Panel Accountant হিসেবে আমি একাধিক সমিতিকে নিয়মের মধ্যে রেখে সুরক্ষিত রাখতে পারব—এই দায়িত্বটাই নিতে চাই।”</div>
-        </div>
-
-        <div class="qa-card">
-            <div class="question"><span>2.</span> সমবায় সমিতিতে আপনার কাজের সবচেয়ে গুরুত্বপূর্ণ দিক কী?</div>
-            <div class="answer">“স্যার, আমার মতে তিনটি বিষয় সবচেয়ে গুরুত্বপূর্ণ— <br>
-                ১. <strong>আইন ও রুলস মেনে হিসাব</strong>, <br>
-                ২. <strong>অডিট আপত্তি যেন না আসে সেই প্রস্তুতি</strong>, <br>
-                ৩. <strong>ম্যানেজমেন্ট ও অডিটরের মধ্যে স্বচ্ছ সমন্বয়</strong>।”</div>
+            <div class="question"><span>Q1.</span> নিজের সম্পর্কে কিছু বলুন</div>
+            <div class="answer">স্যার, আমি বিপুল সরকার। আমি ২০০২ সাল থেকে কো-অপারেটিভ কনজিউমার সোসাইটিতে অ্যাকাউন্টস রিলেটেড কাজ করে আসছি। ক্যাশ বুক, লেজার, লোন রেজিস্টার, ব্যাংক রিকনসিলিয়েশন, ফাইনাল অ্যাকাউন্ট ও অডিট প্রিপারেশন আমার নিয়মিত কাজ। নিয়ম মেনে পরিষ্কার হিসাব রাখা আমার মূল শক্তি।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio1.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 1)</button></div>
         </div>
 
         <div class="qa-card">
-            <div class="question"><span>3.</span> Audit Objection কীভাবে এড়ান?</div>
-            <div class="answer">“স্যার, আমি আগে থেকেই রুলস অনুযায়ী কাজ করি— <br>
-                * Reserve Fund ঠিকমতো ইনভেস্ট করা, <br>
-                * NPA অনুযায়ী Provision রাখা, <br>
-                * BRS নিয়মিত করা। <br>
-                <span class="highlight-text">অডিট আসার আগেই ৮০% আপত্তি আমি নিজেই বন্ধ করে দিই।</span>”</div>
+            <div class="question"><span>Q2.</span> Co-operative Society কী?</div>
+            <div class="answer">কো-অপারেটিভ সোসাইটি হলো সদস্যদের দ্বারা গঠিত একটি সংগঠন, যেখানে লাভের চেয়ে সদস্যদের সুবিধা ও স্বার্থকে বেশি গুরুত্ব দেওয়া হয়।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio2.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 2)</button></div>
         </div>
 
         <div class="qa-card">
-            <div class="question"><span>4.</span> Cash Balance বেশি থাকলে আপনি কী করবেন?</div>
-            <div class="answer">“স্যার, ক্যাশ বেশি থাকা মানেই ঝুঁকি। আমি সঙ্গে সঙ্গে ব্যাংকে ডিপোজিটের প্রস্তাব দেব এবং বোর্ড রেজোলিউশন নেব। অলস ক্যাশ রাখা সমবায়ের স্বার্থে ঠিক নয়।”</div>
+            <div class="question"><span>Q3.</span> By-law কী?</div>
+            <div class="answer">বাই-ল হলো সোসাইটির নিজের নিয়ম-কানুন, যেটা অনুযায়ী সোসাইটি পরিচালিত হয়।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio3.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 3)</button></div>
         </div>
 
         <div class="qa-card">
-            <div class="question"><span>5.</span> NPA বাড়লে আপনি কী পরামর্শ দেবেন?</div>
-            <div class="answer">“আমি প্রথমে Current ও Overdue Loan আলাদা করব। তারপর Recovery Plan, প্রয়োজনে Provision বাড়ানো ও নতুন লোনে কন্ট্রোল— কারণ <span class="highlight-text">NPA বেশি হলে গ্রেডিং ও ভবিষ্যৎ লোন দুটোই ক্ষতিগ্রস্ত হয়</span>।”</div>
+            <div class="question"><span>Q4.</span> Registrar এর কাজ কী?</div>
+            <div class="answer">রেজিস্ট্রার অফ কো-অপারেটিভ সোসাইটিজ সোসাইটির রেজিস্ট্রেশন, অডিট সুপারভিশন, বাই-ল অ্যাপ্রুভাল ও আইনগত নিয়ন্ত্রণ করেন।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio4.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 4)</button></div>
         </div>
 
         <div class="qa-card">
-            <div class="question"><span>6.</span> Reserve Fund কেন আলাদা করে ইনভেস্ট করতে হয়?</div>
-            <div class="answer">“স্যার, Reserve Fund সদস্যদের নিরাপত্তার টাকা। আইন অনুযায়ী এটা ক্যাশে রাখা যায় না। আলাদা করে অনুমোদিত ব্যাংক বা ফেডারেশনে ইনভেস্ট না করলে অডিট আপত্তি আসবেই।”</div>
+            <div class="question"><span>Q5.</span> Receipt & Payment এবং Income & Expenditure এর পার্থক্য কী?</div>
+            <div class="answer">রিসিপ্ট এন্ড পেমেন্ট অ্যাকাউন্টে শুধু টাকা আসা-যাওয়ার হিসাব থাকে, লাভ-লোকসান দেখা যায় না। অন্যদিকে ইনকাম এন্ড এক্সপেন্ডিচার অ্যাকাউন্টে আয় ও খরচ ধরে লাভ বা লোকসান বোঝা যায়।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio5.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 5)</button></div>
         </div>
 
         <div class="qa-card">
-            <div class="question"><span>7.</span> Management যদি চাপ দেয় নিয়ম ভাঙতে?</div>
-            <div class="answer">“আমি বিনয়ের সাথে বলব— ‘স্যার, এটা করলে অডিট আপত্তি আসবে এবং সমিতির গ্রেড কমে যেতে পারে।’ <span class="highlight-text">আমি ব্যক্তির নয়, সমিতির স্বার্থে কাজ করি</span>।”</div>
+            <div class="question"><span>Q6.</span> Trial Balance কেন বানানো হয়?</div>
+            <div class="answer">ট্রায়াল ব্যালেন্স বানানো হয় ডেবিট ও ক্রেডিট সমান হয়েছে কিনা, অর্থাৎ হিসাবের অঙ্ক ঠিক আছে কিনা যাচাই করার জন্য।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio6.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 6)</button></div>
         </div>
 
         <div class="qa-card">
-            <div class="question"><span>8.</span> BRS কেন গুরুত্বপূর্ণ?</div>
-            <div class="answer">“স্যার, BRS ছাড়া ব্যাংক ব্যালেন্স বিশ্বাসযোগ্য হয় না। চেক ক্লিয়ারিং, ব্যাংক চার্জ—সব এখানেই ধরা পড়ে। নিয়মিত BRS মানেই স্বচ্ছ ব্যাংক হিসাব।”</div>
+            <div class="question"><span>Q7.</span> Working Capital কী?</div>
+            <div class="answer">ওয়ার্কিং ক্যাপিটাল হলো কারেন্ট অ্যাসেট থেকে কারেন্ট লাইবিলিটি বাদ দিলে যা থাকে। এটা দিয়ে সোসাইটির দৈনন্দিন কাজ চালানোর ক্ষমতা বোঝা যায়।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio7.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 7)</button></div>
         </div>
 
         <div class="qa-card">
-            <div class="question"><span>9.</span> লাভ হলে প্রথম কাজ কী?</div>
-            <div class="answer">“স্যার, প্রথমেই <strong>২৫% Reserve Fund</strong>। তারপর <strong>Education Fund</strong>। আইন মেনে না চললে ডিভিডেন্ড দেওয়া দণ্ডনীয়—এটা আমি খুব স্পষ্টভাবে জানি।”</div>
+            <div class="question"><span>Q8.</span> Bank Reconciliation Statement (BRS) কেন দরকার?</div>
+            <div class="answer">ব্যাংক পাস বুক আর ক্যাশ বা ব্যাংক বুকের ব্যালেন্সে পার্থক্য হলে তার কারণ বের করার জন্য বি-আর-এস দরকার।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio8.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 8)</button></div>
         </div>
 
-        <div class="qa-card" style="border: 2px solid var(--accent);">
-            <div class="question" style="background: var(--accent);"><span>10.</span> কেন আপনাকেই Panel Accountant করা হবে?</div>
-            <div class="answer">“স্যার, আমি শুধু হিসাব লিখি না— আমি ভবিষ্যৎ ঝুঁকি আগেই দেখি। ৩০ বছরের অভিজ্ঞতা আমাকে শিখিয়েছে— <span class="highlight-text">সমবায়ে সবচেয়ে বড় শক্তি হলো স্বচ্ছতা, শৃঙ্খলা আর নিয়ম</span>।”</div>
+        <div class="qa-card">
+            <div class="question"><span>Q9.</span> Audit Objection কী?</div>
+            <div class="answer">অডিটের সময় যদি কোনো ভুল, নিয়মভঙ্গ বা অসম্পূর্ণ কাগজ পাওয়া যায়, সেটাকেই অডিট অবজেকশন বলা হয়।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio9.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 9)</button></div>
         </div>
 
-    </div>
+        <div class="qa-card">
+            <div class="question"><span>Q10.</span> Audit Objection কীভাবে মেটান?</div>
+            <div class="answer">প্রথমে ভুলটা বুঝি, তারপর প্রয়োজনীয় কাগজ বা সংশোধনী এন্ট্রি করে অডিট অবজেকশন রেজিস্টারে কমপ্লায়েন্স দেখাই।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio10.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 10)</button></div>
+        </div>
 
-    <div class="nav-footer">
-        <a href="index.html" class="btn-back"><i class="fas fa-home"></i> ফিরে যান ড্যাশবোর্ডে</a>
+        <div class="qa-card">
+            <div class="question"><span>Q11.</span> Loan Register এ কী থাকে?</div>
+            <div class="answer">লোন রেজিস্টারে সদস্যের নাম, লোনের পরিমাণ, সুদের হার, কিস্তি, আদায় ও বকেয়ার হিসাব থাকে।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio11.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 11)</button></div>
+        </div>
+
+        <div class="qa-card">
+            <div class="question"><span>Q12.</span> NPA কী?</div>
+            <div class="answer">যে লোন দীর্ঘদিন ধরে আদায় হয় না, সেটিকে এন-পি-এ বা নন পারফর্মিং অ্যাসেট বলা হয়।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio12.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 12)</button></div>
+        </div>
+
+        <div class="qa-card">
+            <div class="question"><span>Q13.</span> Depreciation কেন দেওয়া হয়?</div>
+            <div class="answer">ফিক্সড অ্যাসেট ব্যবহারে পুরনো হয়, তাই তার মূল্যের কমে যাওয়ার হিসাব করতেই ডেপ্রিসিয়েশন দেওয়া হয়।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio13.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 13)</button></div>
+        </div>
+
+        <div class="qa-card">
+            <div class="question"><span>Q14.</span> Final Account বানানোর সময় কী কী কাগজ লাগে?</div>
+            <div class="answer">ক্যাশ বুক, লেজার, ট্রায়াল ব্যালেন্স, লোন ডিটেইলস, ব্যাংক স্টেটমেন্ট, স্টক এন্ড অ্যাসেট রেজিস্টার এবং অডিট রিলেটেড পেপারস।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio14.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 14)</button></div>
+        </div>
+
+        <div class="qa-card" style="border-left-color: #f1c40f;">
+            <div class="question"><span>Q15.</span> কেন আপনাকে Panel Accountant করা হবে?</div>
+            <div class="answer">আমার দীর্ঘদিনের প্র্যাক্টিক্যাল এক্সপেরিয়েন্স আছে, আমি অডিট ফ্রেন্ডলি হিসাব রাখি এবং রেজিস্ট্রারের নিয়ম মেনে কাজ করতে অভ্যস্ত।</div>
+            <div class="controls"><button class="play-btn" onclick="playMyAudio('audio15.mp3')"><i class="fas fa-play"></i> উত্তর শুনুন (Audio 15)</button></div>
+        </div>
+
+        <div class="confidence-box">
+            <h3 style="color: var(--accent-color); margin-top:0;">🌟 Confidence Line</h3>
+            <p style="font-size: 1.2rem; font-weight: bold;">"আমি নিয়ম মেনে, স্বচ্ছতা ও দায়িত্বের সাথে কো-অপারেটিভ সোসাইটির হিসাব পরিচালনা করতে পারি।"</p>
+            <button class="play-btn" onclick="playMyAudio('confidence.mp3')" style="margin: 0 auto; background: #2c3e50;"><i class="fas fa-microphone"></i> শপথ বাক্যটি শুনুন</button>
+        </div>
     </div>
 </div>
+
+<footer>
+    <p>Super Success Computer Education Center | 📞 8017247298</p>
+    <p>© 2026 SSCEC Digital Learning Platform</p>
+</footer>
+
+<script>
+    let currentAudio = null;
+
+    function playMyAudio(fileUrl) {
+        // যদি আগে থেকে কোনো অডিও চলতে থাকে তবে তা থামিয়ে দিবে
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
+
+        // নতুন অডিও ফাইল সেট করা
+        currentAudio = new Audio(fileUrl);
+        
+        // অডিও প্লে করা
+        currentAudio.play().catch(function(error) {
+            console.log("Audio play failed: ", error);
+            alert("দুঃখিত স্যার, অডিও ফাইলটি (" + fileUrl + ") আপনার ফোল্ডারে খুঁজে পাওয়া যাচ্ছে না।");
+        });
+    }
+</script>
 
 </body>
 </html>
