@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>হিসাবের সহজ কথা - SSCEC Digital Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --asset-color: #27ae60;
+            --liab-color: #e74c3c;
+            --working-color: #2980b9;
+            --exp-color: #f39c12;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: #333; line-height: 1.6; margin: 0; padding: 0; }
+        header { background: linear-gradient(135deg, #2c3e50, #000); color: white; text-align: center; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 30px auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        
+        .audio-player { background: #eef2f7; padding: 15px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 30px; border: 1px solid #d1d9e6; }
+        
+        .group-title { font-size: 1.5rem; font-weight: bold; margin-top: 35px; border-bottom: 3px solid #ddd; padding-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .group-a { color: var(--working-color); }
+        .group-b { color: var(--asset-color); }
+        .group-c { color: var(--exp-color); }
+        .group-d { color: #8e44ad; }
+
+        .term-card { border: 1px solid #eee; padding: 20px; border-radius: 10px; margin: 15px 0; transition: 0.3s; }
+        .term-card:hover { border-color: #3498db; background: #fafafa; }
+        .term-name { font-size: 1.2rem; font-weight: bold; margin-bottom: 8px; color: #2c3e50; }
+        
+        .example-box { background: #f9f9f9; padding: 10px; border-radius: 5px; font-size: 0.95rem; border-left: 4px solid #ccc; margin: 10px 0; }
+        .kid-easy { background: #fff9db; color: #856404; padding: 8px 12px; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 5px; border: 1px dashed #f1c40f; }
+
+        .interview-footer { background: #2c3e50; color: white; padding: 25px; border-radius: 12px; text-align: center; margin-top: 40px; }
+        .back-btn { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #3498db; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Super Success Computer Education Center</h1>
+    <p>📘 হিসাবের সহজ কথা (Accounting Terms Made Easy)</p>
+</header>
+
+<div class="container">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> ড্যাশবোর্ডে ফিরুন</a>
+
+    <div class="audio-player">
+        <strong><i class="fas fa-volume-up"></i> অডিও ক্লাস শুনুন:</strong>
+        <audio controls><source src="sscec_accounting_terms.mp3" type="audio/mpeg"></audio>
+    </div>
+
+    <div class="group-title group-a">🟢 A. Current Position (চলতি অবস্থা)</div>
+    
+    <div class="term-card">
+        <div class="term-name">1️⃣ Current Asset (চলতি সম্পদ)</div>
+        <p>যে জিনিসগুলো খুব তাড়াতাড়ি টাকা হয়ে যাবে।</p>
+        <div class="example-box">উদাহরণ: ক্যাশ, ব্যাংকের টাকা, Debtors, অল্প সময়ের লোন।</div>
+        <div class="kid-easy">👉 সহজ ভাষায়: “যেগুলো এখন বা খুব শিগগিরই টাকা হবে।”</div>
+    </div>
+
+    <div class="term-card">
+        <div class="term-name">2️⃣ Current Liability (চলতি দায়)</div>
+        <p>যে টাকা খুব শিগগিরই অন্যকে দিতে হবে।</p>
+        <div class="example-box">উদাহরণ: বেতন, বিদ্যুৎ বিল, Creditors, ব্যাংক কিস্তি।</div>
+        <div class="kid-easy">👉 সহজ ভাষায়: “যে দেনা খুব তাড়াতাড়ি শোধ করতে হবে।”</div>
+    </div>
+
+    <div class="term-card">
+        <div class="term-name">3️⃣ Liquid Asset (তরল সম্পদ)</div>
+        <p>যেগুলো সঙ্গে সঙ্গে খরচ করা যায়।</p>
+        <div class="example-box">উদাহরণ: হাতে ক্যাশ, ব্যাংকের টাকা। (দ্রষ্টব্য: Debtors এখানে আসবে না)</div>
+        <div class="kid-easy">👉 সহজ ভাষায়: “যে টাকা পকেটে বা ব্যাংকে আছে।”</div>
+    </div>
+
+    <div class="term-card">
+        <div class="term-name">4️⃣ Working Capital</div>
+        <p>বর্তমান সম্পদ থেকে বর্তমান দেনা বাদ দিলে যা থাকে।</p>
+        <div class="example-box">Formula: Current Asset – Current Liability <br> Example: ₹1,00,000 - ₹60,000 = ₹40,000</div>
+        <div class="kid-easy">👉 সহজ ভাষায়: “সব দেনা মিটিয়ে হাতে যা টাকা বাঁচে।”</div>
+    </div>
+
+    <div class="group-title group-b">🟢 B. Asset & Expenditure Concepts</div>
+    
+    <div class="term-card">
+        <div class="term-name">5️⃣ Fixed Asset</div>
+        <p>যে জিনিসগুলো দীর্ঘদিন ব্যবহার করা হয়। (যেমন: বিল্ডিং, কম্পিউটার)</p>
+        <div class="kid-easy">👉 সহজ ভাষায়: “যেগুলো প্রতিদিন বিক্রি হয় না, কিন্তু কাজের জন্য লাগে।”</div>
+    </div>
+
+    <div class="term-card">
+        <div class="term-name">6️⃣ Capital & Revenue Expenditure</div>
+        <p><strong>Capital:</strong> বড় খরচ (নতুন কম্পিউটার কেনা)। <br> <strong>Revenue:</strong> প্রতিদিনের খরচ (বেতন, বিদ্যুৎ বিল)।</p>
+        <div class="kid-easy">👉 সহজ ভাষায়: “ক্যাপিটাল মানে একবার খরচ - অনেকদিন ব্যবহার। রেভিনিউ মানে চলতি খরচ।”</div>
+    </div>
+
+    <div class="group-title group-c">🟢 C. Income & Expense Adjustment</div>
+    
+    <div class="term-card">
+        <div class="term-name">8️⃣ Accrued Income & Outstanding Expense</div>
+        <p><strong>Accrued:</strong> আয় হয়েছে কিন্তু টাকা আসেনি। <br> <strong>Outstanding:</strong> খরচ হয়েছে কিন্তু টাকা দেওয়া হয়নি।</p>
+        <div class="kid-easy">👉 সহজ ভাষায়: “টাকা পাওয়ার কথা আছে বনাম টাকা দেওয়ার কথা আছে।”</div>
+    </div>
+
+    <div class="term-card">
+        <div class="term-name">1️⃣1️⃣ Depreciation</div>
+        <p>জিনিস পুরোনো হলে তার দাম কমে যাওয়া।</p>
+        <div class="kid-easy">👉 সহজ ভাষায়: “জিনিসের বয়সের সাথে দাম কমা।”</div>
+    </div>
+
+    <div class="group-title group-d">🟢 D. Special / Audit Related Terms</div>
+    
+    <div class="term-card">
+        <div class="term-name">1️⃣2️⃣ Suspense Account</div>
+        <p>হিসাব মিলছে না, তাই সাময়িকভাবে রাখা খাতা।</p>
+        <div class="kid-easy">👉 সহজ ভাষায়: “সমস্যার বাক্স।”</div>
+    </div>
+
+    <div class="term-card">
+        <div class="term-name">1️⃣4️⃣ Net Worth</div>
+        <p>মোট সম্পদ − মোট দায়।</p>
+        <div class="kid-easy">👉 সহজ ভাষায়: “সব দেনা মিটিয়ে আসল শক্তি।”</div>
+    </div>
+
+    <div class="interview-footer">
+        <h3>🎯 Interview-এ এক লাইনের মাস্টার উত্তর</h3>
+        <p>“এই সব টার্ম Final Account বিশ্লেষণে ব্যবহার হয় এবং এগুলো বুঝলেই সোসাইটির প্রকৃত আর্থিক অবস্থা পরিষ্কারভাবে বোঝা যায়।”</p>
+    </div>
+</div>
+
+</body>
+</html>
